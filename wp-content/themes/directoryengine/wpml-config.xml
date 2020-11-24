@@ -1,0 +1,140 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="copy">address</custom-field>
+        <custom-field action="copy">avatar</custom-field>
+        <custom-field action="copy">close_time</custom-field>
+        <custom-field action="copy">comment_count</custom-field>
+        <custom-field action="copy">cover_image</custom-field>
+        <custom-field action="copy">cover_image_url</custom-field>
+        <custom-field action="copy">et_ad_order</custom-field>
+        <custom-field action="copy">et_claimable</custom-field>
+        <custom-field action="copy">et_claim_approve</custom-field>
+        <custom-field action="copy">et_claim_info</custom-field>
+        <custom-field action="copy">et_duration</custom-field>
+        <custom-field action="copy">et_emailaddress</custom-field>
+        <custom-field action="copy">et_expired_date</custom-field>
+        <custom-field action="copy">et_fb_url</custom-field>
+        <custom-field action="copy">et_featured</custom-field>
+        <custom-field action="copy">et_full_location</custom-field>
+        <custom-field action="copy">et_full_location2</custom-field>  <!--Miguel-->
+        <custom-field action="copy">et_google_url</custom-field>
+        <custom-field action="copy">et_location_lat</custom-field>
+        <custom-field action="copy">et_location_lng</custom-field>
+        <custom-field action="copy">et_number_posts</custom-field>
+        <custom-field action="copy">et_order_coupon_code</custom-field>
+        <custom-field action="copy">et_order_currency</custom-field>
+        <custom-field action="copy">et_order_discount_method</custom-field>
+        <custom-field action="copy">et_order_discount_rate</custom-field>
+        <custom-field action="copy">et_order_gateway</custom-field>
+        <custom-field action="copy">et_order_paid_date</custom-field>
+        <custom-field action="copy">et_order_payer_id</custom-field>
+        <custom-field action="copy">et_order_payment_code</custom-field>
+        <custom-field action="copy">et_order_plan_id</custom-field>
+        <custom-field action="copy">et_order_products</custom-field>
+        <custom-field action="copy">et_order_shipping</custom-field>
+        <custom-field action="copy">et_order_total</custom-field>
+        <custom-field action="copy">et_order_total_before_discount</custom-field>
+        <custom-field action="copy">et_paid</custom-field>
+        <custom-field action="copy">et_payment_package</custom-field>
+        <custom-field action="copy">et_phone</custom-field>
+        <custom-field action="copy">et_price</custom-field>
+        <custom-field action="copy">et_twitter_url</custom-field>
+        <custom-field action="copy">et_url</custom-field>
+        <custom-field action="copy">et_video</custom-field>
+        <custom-field action="copy">number_event</custom-field>
+        <custom-field action="copy">open_time</custom-field>
+        <custom-field action="copy">option_name</custom-field>
+        <custom-field action="copy">order</custom-field>
+        <custom-field action="copy">post_count</custom-field>
+        <custom-field action="copy">post_view</custom-field>
+        <custom-field action="copy">rating_score</custom-field>
+        <custom-field action="copy">reviews_count</custom-field>
+        <custom-field action="copy">ribbon</custom-field>
+        <custom-field action="copy">serve_day</custom-field>
+        <custom-field action="copy">sku</custom-field>
+        <custom-field action="copy">slide_template</custom-field>
+        <custom-field action="copy">vc_teaser</custom-field>
+        <custom-field action="copy">video_position</custom-field>
+        <custom-field action="copy">_icl_lang_duplicate_of</custom-field>
+        <custom-field action="copy">_menu_item_classes</custom-field>
+        <custom-field action="copy">_menu_item_menu_item_parent</custom-field>
+        <custom-field action="copy">_menu_item_object</custom-field>
+        <custom-field action="copy">_menu_item_object_id</custom-field>
+        <custom-field action="copy">_menu_item_target</custom-field>
+        <custom-field action="copy">_menu_item_type</custom-field>
+        <custom-field action="copy">_menu_item_url</custom-field>
+        <custom-field action="copy">_menu_item_xfn</custom-field>
+        <custom-field action="copy">_wpb_vc_js_interface_version</custom-field>
+        <custom-field action="copy">_wpb_vc_js_status</custom-field>
+    </custom-fields>
+    <custom-types>
+        <custom-type translate="1">place</custom-type>
+        <custom-type translate="1">event</custom-type>
+        <custom-type translate="1">testimonial</custom-type>
+    </custom-types>    
+    <taxonomies>
+        <taxonomy translate="1">place_category</taxonomy>
+        <taxonomy translate="1">location</taxonomy>
+        <taxonomy translate="1">place_tag</taxonomy>
+    </taxonomies>    
+    <admin-texts>
+        <key name="et_options">
+			<key name="copyright"/>
+			<key name="register_mail_template"/>
+			<key name="confirm_mail_template"/>
+			<key name="confirmed_mail_template"/>
+			<key name="forgotpass_mail_template"/>
+			<key name="resetpass_mail_template"/>
+			<key name="inbox_mail_template"/>
+			<key name="publish_mail_template"/>
+			<key name="archive_mail_template"/>
+			<key name="reject_mail_template"/>
+			<key name="cash_notification_mail"/>
+			<key name="ae_receipt_mail"/>
+			<key name="ae_report_mail"/>
+			<key name="ae_approve_claim_mail"/>
+			<key name="ae_reject_claim_mail"/>
+        </key>
+        <key name="blogname" />
+        <key name="blogdescription" />
+        </key>
+    </admin-texts>    
+
+    <language-switcher-settings>
+        <key name="icl_lang_sel_config">
+            <key name="font-current-normal">#444444</key>
+            <key name="font-current-hover">#000000</key>
+            <key name="background-current-normal">#ffffff</key>
+            <key name="background-current-hover">#eeeeee</key>
+            <key name="font-other-normal">#444444</key>
+            <key name="font-other-hover">#000000</key>
+            <key name="background-other-normal">#ffffff</key>
+            <key name="background-other-hover">#eeeeee</key>
+            <key name="border">#cdcdcd</key>
+        </key>
+        <key name="icl_lang_sel_footer_config">
+            <key name="font-current-normal">#444444</key>
+            <key name="font-current-hover">#000000</key>
+            <key name="background-current-normal">#ffffff</key>
+            <key name="background-current-hover">#eeeeee</key>
+            <key name="font-other-normal">#444444</key>
+            <key name="font-other-hover">#000000</key>
+            <key name="background-other-normal">#ffffff</key>
+            <key name="background-other-hover">#eeeeee</key>
+            <key name="border">#cdcdcd</key>
+        </key>    
+        <key name="icl_language_switcher_sidebar">0</key>  
+        <key name="icl_widget_title_show">0</key>
+        <key name="icl_lang_sel_type">dropdown</key>
+        <key name="icl_lso_link_empty">0</key>
+        <key name="icl_lso_flags">0</key>
+        <key name="icl_lso_native_lang">1</key>
+        <key name="icl_lso_display_lang">1</key>
+        <key name="icl_lang_sel_footer">0</key>
+        <key name="icl_post_availability">0</key>
+        <key name="icl_post_availability_position">below</key>
+        <key name="icl_post_availability_text">This post is also available in: %s</key>    
+    </language-switcher-settings>    
+</wpml-config>
+
+

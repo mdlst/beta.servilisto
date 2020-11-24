@@ -1,0 +1,37 @@
+.edit_form_line {
+	position: relative;
+}
+
+.color-panel{
+	position: absolute;
+	top: 46px;
+	left: 0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: #fff;
+	border: 1px solid #ccc;
+	z-index: 10;
+	width: 320px;
+}
+
+.color-panel .color-item{
+	display: inline-block;
+	border-radius: 6px;
+	padding: 5px;
+	margin: 7px;
+	border: 1px solid transparent;
+}
+
+.color-panel .color-item span{
+	width: 12px;
+	height: 12px;
+	display: block;
+	border-radius: 1px;
+	cursor: pointer;
+}
+
+.color-panel .color-item:hover,
+.color-panel .color-item.active{
+	border: 1px solid #e5e5e5;
+}

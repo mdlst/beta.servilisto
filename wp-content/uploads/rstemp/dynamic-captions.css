@@ -1,0 +1,99 @@
+.tp-caption.blackmontserrat60 {
+font-size:60px;
+line-height:60px;
+font-weight:900;
+font-family:Montserrat;
+color:rgb(31, 31, 31);
+text-decoration:none;
+background-color:transparent;
+text-shadow:none;
+border-width:0px;
+border-color:rgb(0, 0, 0);
+border-style:none;
+}
+
+.tp-caption.blackmontserrat40 {
+font-size:40px;
+line-height:40px;
+font-weight:800;
+font-family:Montserrat;
+color:rgb(31, 31, 31);
+text-decoration:none;
+background-color:transparent;
+text-shadow:none;
+border-width:0px;
+border-color:rgb(31, 31, 31);
+border-style:none;
+}
+
+.tp-caption.greymontserrat18 {
+font-size:18px;
+line-height:26px;
+font-family:Montserrat;
+color:rgb(119, 119, 119);
+text-decoration:none;
+background-color:transparent;
+text-shadow:none;
+border-width:0px;
+border-color:rgb(0, 0, 0);
+border-style:none;
+}
+
+.tp-caption.blackthin342 {
+font-size:35px;
+line-height:35px;
+font-weight:400;
+font-family:Montserrat;
+color:rgb(236, 151, 31);
+text-decoration:none;
+background-color:transparent;
+text-shadow:none;
+border-width:0px;
+border-color:rgb(0, 0, 0);
+border-style:none;
+}
+
+.tp-caption.lightmontserrat70shadowed {
+font-size:70px;
+line-height:70px;
+font-weight:400;
+font-family:Montserrat;
+color:rgb(255, 255, 255);
+text-decoration:none;
+background-color:transparent;
+text-shadow:0px 0px 7px rgba(0, 0, 0, 0.25);
+border-width:0px;
+border-color:rgb(0, 0, 0);
+border-style:none;
+}
+
+.tp-caption.blackboldbgmontserrat20 {
+font-size:20px;
+line-height:20px;
+font-weight:900;
+font-family:Montserrat;
+color:rgb(255, 255, 255);
+text-decoration:none;
+background-color:rgb(0, 0, 0);
+padding:5px 8px;
+text-shadow:none;
+border-width:0px;
+border-color:rgb(0, 0, 0);
+border-style:none;
+}
+
+.tp-caption.blackboldbgmontserrat207ccedf {
+font-size:20px;
+line-height:20px;
+font-weight:900;
+font-family:Montserrat;
+color:rgb(255, 255, 255);
+text-decoration:none;
+background-color:rgb(124, 206, 223);
+padding:5px 8px;
+text-shadow:none;
+border-width:0px;
+border-color:rgb(0, 0, 0);
+border-style:none;
+}
+

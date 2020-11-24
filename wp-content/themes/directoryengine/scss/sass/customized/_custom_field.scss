@@ -1,0 +1,33 @@
+//== Custom Field
+//
+.form-group.custom-field {
+	position: relative;
+}
+.content-description .ae-field-title {
+	color: #737373;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 14px;
+}
+.post-place-warpper .custom-field  a.chosen-single ,
+.custom-field .chosen-container-single  a.chosen-single ,
+.custom-field .chosen-container-active.chosen-with-drop a.chosen-single {
+	padding-top : 0;
+}
+.custom-field .chosen-container-active.chosen-with-drop a.chosen-single div {
+	top: 0;
+}
+.form-group.custom-field.radio-field .message, .form-group.custom-field.checkbox-field .message {
+	margin-top: 10px;
+	text-align: right;
+}
+.error .message, .error .fa-exclamation-triangle {
+	text-align: right;
+}
+.form-group.checkbox-field.error .fa-exclamation-triangle,
+.form-group.radio-field.error .fa-exclamation-triangle,
+.error .fa-exclamation-triangle {
+	position: absolute;
+	right: 10px;
+	top: 45%;
+}

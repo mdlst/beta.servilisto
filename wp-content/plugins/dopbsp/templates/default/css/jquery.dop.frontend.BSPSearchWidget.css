@@ -1,0 +1,920 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin (PRO)
+* Version                 : 2.1.1
+* File                    : templates/default/css/jquery.dop.frontend.BSPSearch.css
+* File Version            : 1.0.5
+* Created / Last Modified : 25 August 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Front end search jQuery plugin stylesheet.
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+.DOPBSPSearchWidget-loader{
+    background: url('../images/loader.gif') no-repeat center center;
+    background-color: #fcfcfc;
+    border: 1px solid #cccccc;
+    height: 38px;
+    margin: 20px 0;
+}
+
+.DOPBSPSearchWidget-wrapper{
+    border-collapse: collapse;
+    border: none !important;
+    border-spacing: 0;
+     -webkit-box-sizing: content-box; 
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 20px 0 !important;
+    min-width: 240px;
+    padding: 0 !important;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.DOPBSPSearchWidget-strong{
+    font-weight: bold !important;
+}
+
+.DOPBSPSearchWidget-left{
+    float: left !important;
+}
+
+.DOPBSPSearchWidget-right{
+    float: right !important;
+}
+
+.DOPBSPSearchWidget-hidden{
+    display: none;
+}
+
+.DOPBSPSearchWidget-clear{
+    clear: both;
+}
+
+.DOPBSPSearchWidget-wrapper .dopbsp-column-separator-style,
+.DOPBSPSearchWidget-wrapper .dopbsp-results-style,
+.DOPBSPSearchWidget-wrapper .dopbsp-sidebar-style{
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.DOPBSPSearchWidget-wrapper .dopbsp-column-separator-style{
+    width: 20px;
+}
+
+.DOPBSPSearchWidget-wrapper .dopbsp-sidebar-style{
+    width: 240px;
+}
+
+.DOPBSPSearchWidget-wrapper .dopbsp-column-separator{
+    background: transparent !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.DOPBSPSearchWidget-wrapper td{
+    vertical-align: top !important;
+}
+
+.DOPBSPSearchWidget-wrapper hr{
+    border-bottom: 1px solid #cccccc !important;
+    height: 0px;
+    margin: 0 -10px 39px -10px;
+}
+
+/*
+ * *********************************************************** Begin DOP select.
+ */
+.DOPBSPSearchWidget-wrapper .DOPSelect{
+    width: 220px !important;
+}
+
+/*
+ * Single select.
+ */
+.DOPBSPSearchWidget-wrapper .DOPSelect .dopselect-select{
+    background: #ffffff;
+    border: 1px solid #c9c9c9;
+}
+
+.DOPBSPSearchWidget-wrapper .DOPSelect .dopselect-select .dopselect-selection{
+    color: #666666 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 300 !important;
+    height: 28px !important;
+    line-height: 28px !important;
+    width: 180px !important;
+}
+
+.DOPBSPSearchWidget-wrapper .DOPSelect .dopselect-select .dopselect-icon{
+    color: #c9c9c9 !important;
+    line-height: 28px !important;
+    height: 28px !important;
+    width: 28px !important;
+}
+
+.DOPBSPSearchWidget-wrapper .DOPSelect .dopselect-select:hover .dopselect-icon{
+    color: #ff6300 !important;
+}
+
+.DOPBSPSearchWidget-wrapper .DOPSelect.dopselect-single ul{
+    background: #ffffff !important;
+    border: 1px solid #464646 !important;
+    width: 218px !important;
+}
+
+.DOPBSPSearchWidget-wrapper .DOPSelect.dopselect-single ul li{
+    background: #ffffff !important;
+    color: #666666 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    width: 200px !important;
+}
+
+.DOPBSPSearchWidget-wrapper .DOPSelect.dopselect-single ul li:hover,
+.DOPBSPSearchWidget-wrapper .DOPSelect.dopselect-single ul li.dopselect-selected{
+    background: #464646 !important;
+    color: #ffffff !important;
+}
+
+/*
+ * Small single select.
+ */
+.DOPBSPSearchWidget-wrapper .DOPSelect.dopbsp-small{
+    width: 105px !important;
+    float: left;
+}
+
+.DOPBSPSearchWidget-wrapper .DOPSelect.dopbsp-small .dopselect-select .dopselect-selection{
+    width: 65px !important;
+}
+
+.DOPBSPSearchWidget-wrapper .DOPSelect.dopbsp-small ul{
+    width: 103px !important;
+}
+
+.DOPBSPSearchWidget-wrapper .DOPSelect.dopbsp-small ul li{
+    width: 95px !important;
+}
+/*
+ * ************************************************************* End DOP select.
+ */
+
+/*
+ * ***************************************************************************** Begin sidebar.
+ */
+.DOPBSPSearchWidget-sidebar{
+    background: #fcfcfc;
+    border: 1px solid #cccccc !important;
+    padding: 9px 9px 20px 9px !important
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module{
+    margin: 0 0 20px 0;
+    width: 100% !important;
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module h4{
+    color: #464646 !important;
+    display: block !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 20px !important;
+    margin: 0 !important;
+    padding: 10px 0 0 0 !important;
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper,
+.DOPBSPSearchWidget-sidebar .dopbsp-module:last-child{
+    margin: 0 10px 0 0;
+    position: relative;
+    float:left;
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper:last-child,
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper.DOPBSPSearchWidget-left{
+    margin: 0;
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper.DOPBSPSearchWidget-left:first-child{
+    margin: 0 10px 0 0;
+}
+
+/*
+ * Begin label.
+ */
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper label{
+    color: #666666;
+    display: block;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    text-decoration: none !important;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+    float: left;
+    margin: 5px 15px;
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper label:hover{
+    color: #ff6300;
+}
+/*
+ * End label.
+ */
+
+/*
+ * Begin text.
+ */
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text]{
+    -webkit-appearance: none !important;
+    background: #ffffff;
+    border: 1px solid #c9c9c9;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #666666;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px;
+    font-weight: 300;
+    height: auto;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 4px 9px;
+    width: 200px;
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text]:focus{
+    border: 1px solid #c9c9c9;
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text]:disabled{
+    opacity: 0.5;
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPSearchWidget-check-in-view,
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPSearchWidget-check-out-view{
+    background: #ffffff url('../images/sprite.png') -5px -116px;
+    padding: 4px 9px 4px 34px !important;
+    width: 175px;
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPSearchWidget-search{
+    background: #ffffff url('../images/sprite.png') -5px -156px;
+    padding: 4px 9px 4px 34px !important;
+    width: 175px;
+}
+/*
+ * End text.
+ */
+
+
+/*
+ * Begin button.
+ */
+/*.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]{
+    -webkit-appearance: none !important;
+    background: #ff6300;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 40px;
+    height: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    -webkit-transition: background 300ms linear;
+    -moz-transition: background 300ms linear;
+    -o-transition: background 300ms linear;
+    transition: background 300ms linear;
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]{
+    margin: 11px 0 10px 0;
+}*/
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]:hover,
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=button]:focus{
+    background: #464646;
+    outline: none;
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper .dopbsp-error {
+    width: 100%;
+    float:left;
+    margin: 10px;
+    color: #dd6464;
+}
+/*
+ * End button.
+ */
+
+
+/*
+ * Price
+ */
+.DOPBSPSearchWidget-sidebar .dopbsp-module.dopbsp-price{
+    margin: 0 0 23px 10px;
+    width: 200px;
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module.dopbsp-price:last-child{
+    margin: 0 0 13px 10px;
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module.dopbsp-price .dopbsp-input-wrapper{
+    padding: 20px 0 0 0;
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module.dopbsp-price .dopbsp-input-wrapper label{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.DOPBSPSearchWidget-sidebar .dopbsp-module.dopbsp-price .dopbsp-input-wrapper label:first-child{
+    left: 0;
+}
+
+/*
+ * ***************************************************** Begin jQuery UI slider.
+ */
+.DOPBSPSearchWidget-sidebar .ui-slider{
+    background: #ebebeb !important;
+    border: 1px solid #ebebeb !important;
+    border-radius: 6px !important;
+    height: 12px !important;
+    margin: 3px 0 !important;
+    position: relative !important;
+}
+.DOPBSPSearchWidget-sidebar .ui-slider-range{
+    background: #ffffff !important;
+    border-radius: 6px !important;
+    height: 12px !important;
+    margin: 0 !important;
+    position: absolute !important;
+}
+
+.DOPBSPSearchWidget-sidebar .ui-slider-handle{
+    background: #ffffff !important;
+    border: 5px solid #898989 !important;
+    border-radius: 10px !important;
+     -webkit-box-sizing: content-box; 
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    height: 10px !important;
+    margin: 0 0 0 -10px !important;
+    position: absolute !important;
+    text-decoration: none !important;
+    top: -4px !important;
+    width: 10px !important;
+}
+
+.DOPBSPSearchWidget-sidebar .ui-slider-handle:hover{
+    border: 5px solid #ff6300 !important;
+}
+
+.DOPBSPSearchWidget-sidebar .ui-slider-handle .DOPBSPSearchWidget-price-info{
+    color:#666666 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 100 !important;
+    position:absolute !important;
+    top:-25px !important;
+    left:-10px !important;
+    min-width: 50px;
+}
+/*
+ * ***************************************************** Begin jQuery UI slider.
+ */
+
+/*
+ * ************************************************* Begin jQuery UI datepicker.
+ */
+.DOPBSPSearchWidget-datepicker.ui-datepicker{
+    background: #ffffff !important;
+    border: 1px solid #464646 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    width: 218px !important;
+}
+
+/*
+ * jQuery UI datepicker header.
+ */
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-header{
+    background: #464646 !important;
+    border-bottom: 1px solid #464646 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+}
+
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next,
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev{
+    background-color: #464646 !important;
+    background-image: url('../images/sprite.png') !important;
+    border: none !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    cursor: pointer !important;
+    height: 38px !important;
+    left: auto !important;
+    position: relative !important;
+    right: auto !important;
+    top: auto !important;
+    width: 38px !important;
+    -webkit-transition: background-color 300ms linear !important;
+    -moz-transition: background-color 300ms linear !important;
+    -o-transition: background-color 300ms linear !important;
+    transition: background-color 300ms linear !important;
+}
+
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next:hover,
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev:hover{
+    background-color: #acacac !important;
+}
+
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next.ui-state-disabled,
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev.ui-state-disabled{
+    display: none !important;
+}
+
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next{
+    background-position: -281px -1px !important;
+    float: right !important;
+}
+
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev{
+    background-position: -241px -1px !important;
+    float: left !important;
+}
+
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next .ui-icon,
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev .ui-icon{
+    display: none !important;
+}
+
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-title,
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-month,
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-year{
+    color: #ffffff !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+    line-height: 38px !important;
+    text-align: center !important;
+}
+
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-title{
+    margin: 0 38px !important;
+}
+
+/*
+ * jQuery UI datepicker calendar.
+ */
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-calendar{
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    margin: 0 !important;
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-calendar th{
+    background: #acacac !important;
+    border: 1px solid #c9c9c9 !important;
+    border-top: none !important;
+    color: #ffffff !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 300 !important;
+    line-height: 18px !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-calendar td{
+    border: 1px solid #c9c9c9 !important;
+    padding: 0 !important;
+}
+
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-calendar td.ui-datepicker-other-month{
+    background: #eeeeee !important;
+    line-height: 17px !important;
+}
+
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-calendar .ui-state-disabled span,
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-calendar a{
+    background: #ffffff !important;
+    border: 0 !important;
+    color: #acacac !important;
+    display: block !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 300 !important;
+    line-height: 19px !important;
+    padding: 0 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-calendar a{
+    color: #464646 !important;
+}
+
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-calendar a.ui-state-active,
+.DOPBSPSearchWidget-datepicker.ui-datepicker .ui-datepicker-calendar a:hover{
+    border: 1px solid #464646 !important;
+    line-height: 17px !important;
+}
+/*
+ * *************************************************** End jQuery UI datepicker.
+ */
+/*
+ * ***************************************************************************** End sidebar.
+ */
+
+/*
+ * ***************************************************************************** Begin content.
+ */
+.DOPBSPSearchWidget-content{
+    background: #fcfcfc;
+    border: 1px solid #cccccc !important;
+    padding: 9px 9px 39px 9px !important
+}
+
+.DOPBSPSearchWidget-content .dopbsp-loader{
+    background: url('../images/loader.gif') no-repeat center top;
+    background-color: #fcfcfc;
+    height: 40px;
+    width: 100%;
+}
+/*
+ * ***************************************************************************** End content.
+ */
+
+
+
+/*
+ * ***************************************************************************** Responsive design.
+ */
+
+/*
+ * Desktop.
+ */
+.DOPBSPSearchWidget-1230 {
+    max-width: 1228px;
+}
+
+.DOPBSPSearchWidget-1230 .dopbsp-input-wrapper{
+    width: 169px !important;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.DOPBSPSearchWidget-1230 .dopbsp-input-wrapper input{
+    width: 140px !important;
+}
+
+.DOPBSPSearchWidget-1230 .dopbsp-input-wrapper label{
+    padding: 0px !important;
+    text-align: left !important;
+    margin-left: 0px !important;
+    margin-top: 10px !important;
+}
+
+
+.DOPBSPSearchWidget-1230 .DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPSearchWidget-check-in-view, 
+.DOPBSPSearchWidget-1230 .DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPSearchWidget-check-out-view{
+    background: #ffffff url(../images/sprite.png) -5px -114px !important;
+    padding: 6px 9px 6px 34px !important;
+    margin-top: 35px !important;
+}
+
+.DOPBSPSearchWidget-1230 .DOPSelect.dopbsp-small{
+    width: 185px !important;
+}
+
+.DOPBSPSearchWidget-1230 .DOPSelect.dopbsp-small .dopselect-select{
+    height: 32px !important;
+}
+
+.DOPBSPSearchWidget-1230 .DOPSelect.dopbsp-small .dopselect-select .dopselect-selection{
+    height: 32px !important;
+    line-height: 32px !important;
+}
+
+.DOPBSPSearchWidget-1230 .DOPSelect.dopbsp-small ul {
+    width: 183px !important;
+}
+
+.DOPBSPSearchWidget-1230 .DOPSelect.dopselect-single ul li{
+    width: 185px !important;
+}
+
+.DOPBSPSearchWidget-1230 .dopbsp-button{
+    margin-top: 35px;
+    font-size: 14px;
+    font-style: normal !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    -webkit-transition: background 300ms linear;
+    -moz-transition: background 300ms linear;
+    -o-transition: background 300ms linear;
+    transition: background 300ms linear;
+    border-radius: 0px !important;
+}
+
+
+.DOPBSPSearchWidget-1230 .dopbsp-button:hover{
+    background-color: #ff6300 !important;
+}
+
+/*
+ * Notebook.
+ */
+.DOPBSPSearchWidget-1000 {
+    max-width: 998px;
+}
+
+.DOPBSPSearchWidget-1000 .dopbsp-input-wrapper{
+    width: 212px !important;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.DOPBSPSearchWidget-1000 .dopbsp-input-wrapper input{
+    width: 180px !important;
+}
+
+.DOPBSPSearchWidget-1000 .dopbsp-input-wrapper label{
+    padding: 0px !important;
+    text-align: left !important;
+    margin-left: 0px !important;
+    margin-top: 10px !important;
+}
+
+
+.DOPBSPSearchWidget-1000 .DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPSearchWidget-check-in-view, 
+.DOPBSPSearchWidget-1000 .DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPSearchWidget-check-out-view{
+    background: #ffffff url(../images/sprite.png) -5px -114px !important;
+    padding: 6px 9px 6px 34px !important;
+    margin-top: 35px !important;
+}
+
+.DOPBSPSearchWidget-1000 .DOPSelect.dopbsp-small{
+    width: 225px !important;
+}
+
+.DOPBSPSearchWidget-1000 .DOPSelect.dopbsp-small .dopselect-select{
+    height: 32px !important;
+}
+
+.DOPBSPSearchWidget-1000 .DOPSelect.dopbsp-small .dopselect-select .dopselect-selection{
+    height: 32px !important;
+    line-height: 32px !important;
+}
+
+.DOPBSPSearchWidget-1000 .DOPSelect.dopbsp-small ul {
+    width: 223px !important;
+}
+
+.DOPBSPSearchWidget-1000 .DOPSelect.dopselect-single ul li{
+    width: 225px !important;
+}
+
+.DOPBSPSearchWidget-1000 .dopbsp-button{
+    margin-top: 35px;
+    font-size: 14px;
+    font-style: normal !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-align: center;
+    padding-left: 22px;
+    padding-right: 22px;
+    float: left;
+    -webkit-transition: background 300ms linear;
+    -moz-transition: background 300ms linear;
+    -o-transition: background 300ms linear;
+    transition: background 300ms linear;
+    border-radius: 0px !important;
+}
+
+
+.DOPBSPSearchWidget-1000 .dopbsp-button:hover{
+    background-color: #ff6300 !important;
+}
+
+
+/*
+ * Tablet.
+ */
+.DOPBSPSearchWidget-740 {
+    max-width: 738px;
+}
+
+.DOPBSPSearchWidget-740 .dopbsp-input-wrapper{
+    width: 145px !important;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.DOPBSPSearchWidget-740 .dopbsp-input-wrapper input{
+    width: 120px !important;
+}
+
+.DOPBSPSearchWidget-740 .dopbsp-input-wrapper label{
+    padding: 0px !important;
+    text-align: left !important;
+    margin-left: 0px !important;
+    margin-top: 10px !important;
+}
+
+
+.DOPBSPSearchWidget-740 .DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPSearchWidget-check-in-view, 
+.DOPBSPSearchWidget-740 .DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPSearchWidget-check-out-view{
+    background: #ffffff url(../images/sprite.png) -5px -114px !important;
+    padding: 6px 9px 6px 34px !important;
+    margin-top: 35px !important;
+}
+
+.DOPBSPSearchWidget-740 .DOPSelect.dopbsp-small{
+    width: 165px !important;
+}
+
+.DOPBSPSearchWidget-740 .DOPSelect.dopbsp-small .dopselect-select{
+    height: 32px !important;
+}
+
+.DOPBSPSearchWidget-740 .DOPSelect.dopbsp-small .dopselect-select .dopselect-selection{
+    height: 32px !important;
+    line-height: 32px !important;
+}
+
+.DOPBSPSearchWidget-740 .DOPSelect.dopbsp-small ul {
+    width: 163px !important;
+}
+
+.DOPBSPSearchWidget-740 .DOPSelect.dopselect-single ul li{
+    width: 165px !important;
+}
+
+.DOPBSPSearchWidget-740 .dopbsp-button{
+    margin-top: 35px;
+    font-size: 14px;
+    font-style: normal !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    text-align: center;
+    padding-left: 22px;
+    padding-right: 22px;
+    float: left;
+    -webkit-transition: background 300ms linear;
+    -moz-transition: background 300ms linear;
+    -o-transition: background 300ms linear;
+    transition: background 300ms linear;
+    border-radius: 0px !important;
+}
+
+
+.DOPBSPSearchWidget-740 .dopbsp-button:hover{
+    background-color: #ff6300 !important;
+}
+
+
+/*
+ * Mobile.
+ */
+.DOPBSPSearchWidget-360 {
+    max-width: 358px;
+}
+
+.DOPBSPSearchWidget-360 .dopbsp-input-wrapper{
+    width: 130px !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.DOPBSPSearchWidget-360 .dopbsp-input-wrapper input{
+    width: 110px !important;
+}
+
+.DOPBSPSearchWidget-360 .dopbsp-input-wrapper label{
+    padding: 0px !important;
+    text-align: left !important;
+    margin-left: 0px !important;
+    margin-top: 10px !important;
+}
+
+
+.DOPBSPSearchWidget-360 .DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPSearchWidget-check-in-view, 
+.DOPBSPSearchWidget-360 .DOPBSPSearchWidget-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPSearchWidget-check-out-view{
+    background: #ffffff url(../images/sprite.png) -5px -114px !important;
+    padding: 6px 9px 6px 34px !important;
+    margin-top: 10px !important;
+}
+
+.DOPBSPSearchWidget-360 .DOPBSPSearchWidget-check-out-view,
+.DOPBSPSearchWidget-360 .dopbsp-input-wrapper:nth-child(4){
+    margin-left: 5px !important;
+}
+
+.DOPBSPSearchWidget-360 .DOPSelect.dopbsp-small{
+    width: 155px !important;
+}
+
+.DOPBSPSearchWidget-360 .DOPSelect.dopbsp-small .dopselect-select{
+    height: 32px !important;
+}
+
+.DOPBSPSearchWidget-360 .DOPSelect.dopbsp-small .dopselect-select .dopselect-selection{
+    height: 32px !important;
+    line-height: 32px !important;
+}
+
+.DOPBSPSearchWidget-360 .DOPSelect.dopbsp-small ul {
+    width: 153px !important;
+}
+
+.DOPBSPSearchWidget-360 .DOPSelect.dopselect-single ul li{
+    width: 155px !important;
+}
+
+.DOPBSPSearchWidget-360 .dopbsp-button{
+    margin-top: 35px;
+    font-size: 14px;
+    font-style: normal !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-left: 5px;
+    text-align: center;
+    padding-left: 22px;
+    padding-right: 22px;
+    float: left;
+    -webkit-transition: background 300ms linear;
+    -moz-transition: background 300ms linear;
+    -o-transition: background 300ms linear;
+    transition: background 300ms linear;
+    border-radius: 0px !important;
+}
+
+
+.DOPBSPSearchWidget-360 .dopbsp-button:hover{
+    background-color: #ff6300 !important;
+}

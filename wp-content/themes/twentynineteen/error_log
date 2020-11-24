@@ -1,0 +1,9 @@
+[26-Jan-2020 05:14:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/qr26jagm/public_html/wp-content/themes/twentynineteen/404.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/qr26jagm/public_html/wp-content/themes/twentynineteen/404.php on line 12
+[03-Jun-2020 18:39:04 UTC] PHP Notice:  Undefined index: wp_version in /home/qr26jagm/public_html/wp-content/themes/twentynineteen/functions.php on line 15
+[03-Jun-2020 18:39:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_template_directory() in /home/qr26jagm/public_html/wp-content/themes/twentynineteen/functions.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/qr26jagm/public_html/wp-content/themes/twentynineteen/functions.php on line 16

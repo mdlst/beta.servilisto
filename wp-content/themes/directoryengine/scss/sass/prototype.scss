@@ -1,0 +1,120 @@
+
+/*
+*	Prototype UI
+*/
+//== Variables
+//== Color
+$color_theme_header:					#ddd;
+$color_theme_base:						#1c84d4;
+$color_theme_font:						#444c63;
+$color_clipboard:						#563d7c;
+
+//== Padding
+$padding_theme_base:					15px;
+$border_radius_base:					4px;
+$border_color_base:						darken($color_theme_header, 10%);
+
+//== Mixins
+//
+@import 'mixins';
+
+.wrapper-container {
+	padding-top: 70px;
+}
+
+.prototype-title {
+	position: fixed;
+	width: 100%;
+	background: $color_theme_base;
+	text-align: center;
+	padding-bottom: 10px;
+	z-index: 999;
+	h1 {
+		background: #ddd;
+		margin: 0;
+		line-height: 60px;
+	}
+}
+
+nav.sidebar {
+	position: fixed;
+	width: 260px;
+	background: lighten($color_theme_base, 30%);
+	padding: $padding_theme_base 0;
+	.sidenav {
+		padding-left: 4px;
+		li {
+			padding: floor($padding_theme_base/2) $padding_theme_base;
+			color: $color_theme_font;
+			cursor: pointer;
+			&:hover {
+				color: darken($color_theme_font, 50%);
+			}
+		}
+	}
+}
+
+/*================ Prototype Content ==================*/
+
+.prototype-content {
+	padding: $padding_theme_base 0;
+}
+.block-element {
+	margin-bottom: $padding_theme_base + ceil($padding_theme_base/2); 
+	.title {
+		overflow: hidden;
+		border-left: 4px solid darken($color_theme_base, 10%); 
+		h2 {
+			padding-left: 14px;
+			margin: 0.3em 0;
+		}
+	}
+	.display {
+		border: 1px solid $border_color_base;
+		@include border_radius_top($border_radius_base);
+		padding: $padding_theme_base;
+	}
+	.display-code {
+		background: #f7f7f9;
+		position: relative;
+		border: 1px solid $border_color_base;
+		border-top: none;
+		@include border_radius_bottom($border_radius_base);
+		padding: $padding_theme_base;
+		.tooltip {
+			// width: 100%;
+		}
+	}
+}
+//== Button
+//
+.btn-clipboard {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	border-left: 1px solid $border_color_base;
+	border-bottom: 1px solid $border_color_base;
+	border-radius: 0;
+	-webkit-border-bottom-left-radius: $border_radius_base;
+	-moz-border-radius-bottomleft: $border_radius_base;
+	border-bottom-left-radius: $border_radius_base;
+	background: #FFF;
+	color: darken(#FFF, 70%);
+	padding: 6px 15px;
+	&:hover {
+		color: #FFF;
+		background: lighten($color_clipboard, 10%);
+	}
+}
+//== Modal
+//
+.modal-show {
+	display: block;
+	position: inherit;
+}
+@media (max-width: 1200px) {
+	nav.sidebar {
+		width: 212px;
+	}
+}

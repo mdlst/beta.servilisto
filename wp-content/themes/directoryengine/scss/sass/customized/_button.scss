@@ -1,0 +1,174 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+// 
+button {
+	outline: none;
+}
+.btn-base {
+	display: inline-block;
+	margin-bottom: 0; // For input.btn
+	font-size: $font_size_base;
+	font-weight: $btn_font_weight;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+	border: 1px solid transparent;
+	white-space: nowrap;
+	background: $color_gray;
+	color: lighten($color_gray, 30%);
+	// @include button_size($padding_base_vertical, $padding_base_horizontal, $font_size_base, $font_size_base, 0);
+	@include user_select(none);
+	&-fullwidth {
+		width: 100% !important;
+	}
+	&:hover {
+		color: lighten($color_gray, 30%);
+		text-decoration: none;
+	}
+}
+.btn-post-place {
+	@extend .btn-base;
+	@include button_size(16px, 0, $font_size_large, $font_size_large, 0);
+	line-height: $font_size_large;
+	font-weight: 600;
+	text-transform: uppercase;
+	background: $color_base_fifth;
+	border: none;
+	width: 100%;
+	i {
+		margin-right: 15px;
+	}
+}
+.btn-load-more {
+	@extend .btn-base;
+	@include button_size(7px, 60px, $font_size_base, $font_size_base, 0);
+	font-size: $font_size_small;
+	line-height: $font_size_small;
+	&:hover {
+		background: $color_base_fifth;
+	}
+}
+.btn-comment {
+	@extend .btn-base;
+	@include button_size($padding_btn_vertical, $padding_btn_horizontal, $font_size_base, $font_size_base, 0);
+	text-transform: uppercase;
+}
+.btn-more {
+	@extend .btn-base;
+	@include button_size(12px, 27px, $font_size_small, $font_size_small, 0);
+	background: $color_base_fifth;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.btn-submit {
+	@extend .btn-base;
+	@include button_size(8px, 26px, $font_size_base, $font_size_base, 0);
+	background: $color_base_fifth;
+	text-transform: uppercase;
+}
+.btn-continue, .btn-select-plan {
+	@extend .btn-base;
+	@include button_size(8px, 30px, $font_size_base, $font_size_base, 0);
+	background: $color_base_fifth;
+	text-transform: uppercase;
+}
+.btn-search {
+	@extend .btn-base;
+	@include button_size(10px, 45px, $font_size_base, $font_size_base, 0);
+	background: $color_base_sixth;
+	color: #114f7f;
+	text-transform: uppercase;
+	&:hover {
+		background: lighten($color_base_sixth, 10%);
+		color: #114f7f;
+	}
+}
+.btn-contact-owner {
+	@extend .btn-base;
+	@include button_size(10px, 0, $font_size_small, $font_size_small, 0);
+	width: 100%;
+	color: #114f7f;
+	background: $color_base_sixth;
+	text-transform: uppercase;
+	&:hover {
+		background: lighten($color_base_sixth, 10%);
+		color: #114f7f;
+	}
+}
+.contact-owner-link {
+	@extend .btn-contact-owner;
+}
+.ico-social-link {
+	display: inline-block;
+	height: 26px;
+	line-height: 26px;
+	color: #FFF;
+	span {
+		background: $color_base_fifth;
+		display: inline-block;
+		width: 26px;
+		height: 26px;
+		text-align: center;
+		border-radius: 50%;
+		margin-right: 10px;
+		line-height: 26px;
+	}
+	&:hover {
+		color: #FFF;
+		text-decoration: none;
+	}
+}
+.ico-action-single {
+	display: block;
+	width: 45px;
+	height:45px;
+	text-align: center;
+	background: $color_base_fifth;
+	color: #FFF;
+	line-height: 45px;
+	i {
+		font-size: $font_size_base;
+	}
+	&:hover {
+		background: $color_base_sevth;
+		color: #FFF;
+	}
+}
+.btn-login {
+	@extend .btn-base;
+	@include button_size(8px, 30px, $font_size_base, $font_size_base, 0);
+	background: $color_base_fifth;
+	text-transform: normal;
+}
+
+.load-more-post, .load-refesh-post {
+	@extend .btn-load-more;
+}
+
+.btn-contact-author {
+	@extend .btn-base;
+	@include button_size(8px, 26px, $font_size_small, $font_size_small, 0);
+	background: $color_base_fifth;
+	text-transform: uppercase;
+}
+.claim-place, .no-claim {
+	@extend .btn-base;
+	@include button_size(6px, 12px, $font_size_base, $font_size_base, 0);
+	background: $color_base_fifth;
+	text-transform: normal;
+}
+.btn-submit-price-plan {
+	@extend .btn-base;
+	@include button_size(8px, 26px, $font_size_small, $font_size_small, 0);
+	background: $color_base_fifth;
+	text-transform: uppercase;
+}
+.btn-submit-login-form {
+	@extend .btn-continue;
+}

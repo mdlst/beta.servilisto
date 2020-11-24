@@ -1,0 +1,1 @@
+DOT.methods.calendar_days=new function(){'use strict';var $=jQuery.noConflict();this.settings=new Array();this.text=new Array();this.__construct=function(){};return this.__construct();};

@@ -1,0 +1,364 @@
+//== Modals
+//
+.modal {
+	z-index: 99999;
+}
+.modal-dialog {
+	margin-top: 7%;
+}
+.modal-backdrop {
+	z-index: 9999;
+}
+.modal-content {
+	border: none;
+	border-radius: 0;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.05)
+}
+.modal-header {
+	position: relative;
+	background: $color_base_sevth;
+	color: #FFF;
+	padding: 10px 15px;
+	.close {
+		width: 55px;
+		height: 54px;
+		margin-top: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		background: $color_base_fifth;
+		color: #FFF;
+		opacity: 1;
+	}
+}
+.modal-title {
+	font-family: $font_family_default;
+	font-size: 24px;
+	font-weight: 300;
+}
+.modal-body {
+	padding:0;
+	background: #ecf0f1;
+	.submit-style {
+		padding: 0 30px 20px;
+	}
+}
+
+//== Model list edit place
+//
+.form_modal_style {
+	.form-field {
+		margin-bottom: 20px;
+		.chosen-container {
+			width: 100% !important;
+		}
+		&.submit_singin {
+			margin-top: 14px;
+			margin-bottom: 0;
+		}
+		&.submit_signup {
+			margin-bottom: 0;
+		}
+	}
+	label {
+		font-size: $font_size_base;
+		font-weight: 600;
+		color: $color_base_sevth;
+		display: inline-block;
+		text-transform: uppercase;
+		.alert-icon {
+			margin-left: 5px;
+			color: #c0392b;
+			display: inline-block;
+		}
+		+ .inputCheck {
+			margin-left: 5px;
+		}
+	}
+	textarea {
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		width: 100%;
+		min-height: 150px;
+		resize: none;
+		border: 1px solid #dadfea;
+		padding: 15px;
+	}
+}
+
+//== Edit cover image
+//
+.edit-cover-image {
+	p {
+		font-size: $font_size_small;
+		color: $color_base_sevth;
+		line-height: 1.4;
+		margin: 2px 0 14px 0;
+	}
+	.option-cover-image {
+		padding: 0;
+		> li {
+			display: inline-block;
+			margin-right: 20px;
+			vertical-align: middle;
+			.image-cover {
+				width: 70px;
+				height: 70px;
+				background-color: $color_gray;
+				display: block;
+				overflow:hidden;
+				text-align: center;
+				line-height: 68px;
+				cursor: pointer;
+				img {
+					width: 100%;
+					height: auto;
+				}
+				i {
+					color: #fff;
+					line-height: 5;
+					top: 0;
+					z-index: 58;
+					right: 40%;
+					position:absolute;
+				}
+			}
+			a {
+				font-size: $font_size_small;
+				color: $color_base_sevth;
+				&:hover {
+					color: $color_base_fifth;
+				}
+				i {
+					display: inline-block;
+					margin-right: 4px;
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	.img-preview {
+		width: 100%;
+		height: 200px;
+		background: $color_gray;
+		display: block;
+		position: relative;
+		background-size : cover;
+		.left-img-preview {
+			position: absolute;
+			top: 55px;
+			left: 7%;
+		}
+		.right-img-preview {
+			position: absolute;
+			top: 55px;
+			right: 7%;
+		}
+	}
+}
+
+//== Video Position
+//
+.video-position {
+	display: inline-block;
+	margin-right: 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+	span {
+		display: inline-block;
+		vertical-align: text-top;
+	}
+}
+
+//== Edit gallery image
+//
+.edit-gallery-image {
+	margin-bottom: 0;
+	p {
+		font-size: $font_size_small;
+		color: $color_base_sevth;
+		line-height: 2;
+		margin-bottom: 12px;
+	}
+	.gallery-image {
+		padding: 0;
+		> li {
+			text-align: center;
+			display: inline-block;
+			margin-right: 20px;
+			vertical-align: top;
+			overflow: hidden;
+			padding-top:0;
+			padding-bottom: 0; 
+			.img-gallery {
+				width: 70px;
+				height: 70px;
+				background: $color_gray;
+				display: block;
+				margin-bottom: 10px;
+				position: relative;
+				z-index: 20;
+				overflow: hidden;
+				img {
+					width: 100%;
+				}
+				.delete-img {
+					width: 70px;
+					height: 70px;
+					position: absolute;
+					text-align: center;
+					top: 0;
+					left: 0;
+					display: none;
+					i {
+						font-size: 20px;
+						line-height: 3.4;
+					}
+				}
+				.delete-img i {
+					color: #e74c3c;
+				}
+			}
+			.add-img {
+				width: 70px;
+				height: 70px;
+				position: absolute;
+				background: $color_gray;
+				color: #FFF;
+				text-align: center;
+				top: 0;
+				left: 0;
+				i {
+					font-size: 20px;
+					line-height: 3.4;
+				}
+			}
+			&:hover {
+				.img-gallery img {
+					opacity: 0.3;
+				}
+				.delete-img, .add-img {
+					display: block;
+				}
+				.add-img {
+					background: #FFF;
+					color: $color_gray;
+				}
+			}
+		}
+	}
+}
+
+//== Modal create event
+//
+.form_modal_style {
+	.form-field {
+		> .mce-container {
+			border: 1px solid $color_border_field;
+		}
+		.time-picker-body {
+			.event-start-date, .event-close-date {
+				position: relative;
+				.date-picker {
+					padding-right: 37px;
+					max-width: 228px;
+				}
+				i {
+					position: absolute;
+					right: 12px;
+					top: 12px;
+				}
+			}
+			.datepicker {
+				top: 37px !important;
+				box-shadow: none;
+				border: 1px solid rgba(189, 195, 199, 0.4);
+				&::before, &::after {
+					display: none;
+				}
+			}
+			
+		}
+	}
+}
+
+
+//== Modal login register
+//
+#login_register {
+	.modal-body {
+		padding: 20px 30px;
+	}
+}
+
+.form_modal_style .link_forgot_pass {
+	color: #8b97b1;
+	font-size: 13px;
+	font-style: italic;
+	display: inline-block;
+}
+.form_modal_style .link_forgot_pass:hover {
+	text-decoration: underline !important;
+}
+.form_modal_style .link_sign_up, .form_modal_style .link_sign_in {
+	margin-left: 30px;
+}
+
+//== Modal send message
+//
+#contact_message {
+	.modal-body {
+		padding: 20px 30px;
+		.form-field:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+//== Modal reject pending place
+//
+#reject_post {
+	.modal-body {
+		padding: 20px 30px;
+		.form-field:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+//== Modal report place
+#report {
+	.modal-body {
+		padding: 20px 30px;
+		.form-field:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+/*
+	Fixbug WP 4.5
+ */
+.modal {
+   display: none;
+   overflow: hidden;
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   // z-index: 1050;
+   -webkit-overflow-scrolling: touch;
+   outline: 0;
+}
+.modal-open-link {
+    overflow: hidden;
+}
+.modal-open-link .modal {
+ overflow-x: hidden;
+ overflow-y: auto;
+}
+

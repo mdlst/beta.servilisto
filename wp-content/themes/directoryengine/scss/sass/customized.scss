@@ -1,0 +1,56 @@
+@import 'customized/variables';
+@import 'customized/mixins';
+@import 'plugins/chosen/chosen';
+@import 'plugins/owl-carousel/owl.carousel';
+@import 'plugins/magnific/magnific_popup';
+
+@import 'customized/typography';
+@import 'customized/chosen';
+@import 'customized/input';
+@import 'customized/dropdown';
+@import 'customized/button';
+@import 'customized/breadcrumb';
+@import 'customized/pagination';
+@import 'customized/modals';
+@import 'customized/tabs';
+@import 'customized/form';
+@import 'customized/slider';
+@import 'customized/block-places';
+@import 'customized/categories';
+@import 'customized/block-blog';
+@import 'customized/comments';
+@import 'customized/datepicker';
+@import 'customized/timepicker';
+@import 'customized/notification';
+@import 'customized/google_map';
+@import 'customized/wp_style';
+@import 'customized/custom_field';
+@import 'customized/block-area';
+
+//== Page
+//
+@import 'pages/common';
+//== Homepage
+@import 'pages/homepage';
+//== Page Login
+@import 'pages/login';
+//== List Place
+@import 'pages/list_place';
+//== Profile Dashboard
+@import 'pages/profile_dashboard';
+//== Profile Author
+@import 'pages/profile_author';
+//== Single Place
+@import 'pages/single_place';
+//== Submit Place
+@import 'pages/submit_place';
+//== List User
+@import 'pages/list_user';
+//== Page Blog
+@import 'pages/blog';
+//== Page Blog Detail
+@import 'pages/blog_detail';
+//== Page Static
+@import 'pages/static';
+//== Page error 404
+@import 'pages/error_404';

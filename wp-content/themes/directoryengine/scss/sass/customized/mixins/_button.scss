@@ -1,0 +1,30 @@
+//== Button variants
+//
+@mixin button_variant($color, $background, $border) {
+	background: $background;
+	color: $color;
+	border-color: $border;
+}
+
+@mixin button_variant_hover($color, $background, $background_hover, $border) {
+	background: $background;
+	color: $color;
+	border-color: $border;
+	&:hover {
+		background: $background_hover;
+		color: $color;
+		border-color: $border;
+	}
+	&:active, &.active {
+		
+	}
+}
+
+// Button sizes
+//
+@mixin button_size($padding-vertical, $padding_horizontal, $font_size, $line_height, $border_radius) {
+  padding: $padding_vertical $padding_horizontal;
+  font-size: $font_size;
+  line-height: $line_height;
+  border-radius: $border_radius;
+}

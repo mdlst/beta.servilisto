@@ -1,0 +1,33 @@
+Nov 23 2020 10:14:50
+{"Number":8,"Message":"unserialize(): Error at offset 317 of 3562 bytes","File":"C:\\xampp\\htdocs\\wordpress\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":64}
+
+Nov 23 2020 10:14:50
+{"Number":8,"Message":"unserialize(): Error at offset 19820 of 21513 bytes","File":"C:\\xampp\\htdocs\\wordpress\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":64}
+
+Nov 23 2020 10:14:50
+{"Number":8,"Message":"unserialize(): Error at offset 4406 of 9821 bytes","File":"C:\\xampp\\htdocs\\wordpress\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":64}
+
+Nov 23 2020 10:14:51
+{"Number":8,"Message":"unserialize(): Error at offset 500 of 500 bytes","File":"C:\\xampp\\htdocs\\wordpress\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":64}
+
+Nov 23 2020 10:14:51
+{"Number":8,"Message":"unserialize(): Error at offset 582 of 582 bytes","File":"C:\\xampp\\htdocs\\wordpress\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":64}
+
+Nov 23 2020 10:14:51
+{"Number":8,"Message":"unserialize(): Error at offset 598 of 598 bytes","File":"C:\\xampp\\htdocs\\wordpress\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":64}
+
+Nov 23 2020 10:14:51
+{"Number":8,"Message":"unserialize(): Error at offset 536 of 536 bytes","File":"C:\\xampp\\htdocs\\wordpress\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":64}
+
+Nov 23 2020 10:14:51
+{"Number":8,"Message":"unserialize(): Error at offset 544 of 544 bytes","File":"C:\\xampp\\htdocs\\wordpress\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":64}
+
+Nov 23 2020 10:14:51
+{"Number":8,"Message":"unserialize(): Error at offset 561 of 561 bytes","File":"C:\\xampp\\htdocs\\wordpress\\wp-content\\plugins\\all-in-one-wp-migration\\lib\\vendor\\servmask\\database\\class-ai1wm-database-utility.php","Line":64}
+
+Nov 23 2020 10:14:53
+{"type":8,"message":"Trying to access array offset on value of type bool","file":"C:\\xampp\\htdocs\\wordpress\\wp-content\\themes\\directoryengine\\includes\\aecore\\fields\\cat.php","line":31}
+
+Nov 23 2020 10:14:56
+{"type":8,"message":"Trying to access array offset on value of type bool","file":"C:\\xampp\\htdocs\\wordpress\\wp-content\\themes\\directoryengine\\includes\\aecore\\fields\\cat.php","line":31}
+

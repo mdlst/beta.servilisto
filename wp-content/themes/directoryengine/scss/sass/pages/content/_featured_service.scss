@@ -1,0 +1,144 @@
+//== Theme Featured
+//
+.features-wrapper {
+	margin:0 0 42px;
+	&.hover-color {
+		float: left;
+	}
+	.icon-features {
+	    float: left;
+	    margin: 0 30px;
+	    min-width: 40px;
+		i {
+			font-size: $font_size_large * 2;
+			color: $color_base_fifth;
+		}
+	}
+	.content-features {
+		overflow: hidden;
+    	vertical-align: top;
+		h2 {
+			margin: 0 0 10px;
+		    color: $color_base_sevth;
+		    font-size: $font_size_large;
+		    font-weight: 700;
+		}
+		p {
+			font-size: $font_size_base;
+			line-height: 1.45em;
+			color: $color_base_sevth;
+			margin:0;
+		}
+	}
+}
+
+
+//== Theme Service
+//
+.services-wrapper {
+	margin-bottom: 30px;
+	text-align: center;
+	.icon-services {
+		width: 65px;
+		height: 65px;
+		display: block;
+		margin: 0 auto;
+		border: 3px solid transparent;
+		background-color: $color_base_fifth;
+		//TRANSISTIONS
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		overflow: hidden;
+		opacity: 0.1;
+		i {
+			color: #fff;
+			font-size: $font_size_large * 2;
+			line-height: 58px;
+		}
+	}
+	.content-services {
+		h2 {
+			margin-top: 22px;
+			margin-bottom: 10px;
+			color: $color_base_sevth;
+			font-size: $font_size_large;
+			font-weight: 700;
+		}
+		p {
+			color: $color_base_sevth;
+			font-size: $font_size_small;
+			line-height: 1.5;
+			margin-bottom: 15px;
+		}
+	}
+	&:hover {
+		.icon-services {
+			opacity: 1;
+			border-color: #fff;
+		}
+	}
+}
+
+.services-wrapper:hover i {
+	-webkit-animation: toRightFromLeft 0.3s forwards;
+	-moz-animation: toRightFromLeft 0.3s forwards;
+	animation: toRightFromLeft 0.3s forwards;
+}
+@-webkit-keyframes toRightFromLeft {
+	49% {
+		-webkit-transform: translate(100%);
+	}
+	50% {
+		opacity: 0;
+		-webkit-transform: translate(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@-moz-keyframes toRightFromLeft {
+	49% {
+		-moz-transform: translate(100%);
+	}
+	50% {
+		opacity: 0;
+		-moz-transform: translate(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@keyframes toRightFromLeft {
+	49% {
+		transform: translate(100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translate(-100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@media (max-width: $screen-sm-max) { // max-width: 991px
+	//== Visual composer
+	.wpb_row {
+		> .wpb_column:last-child {
+			> .wpb_wrapper > *:last-child {
+				margin: 0 !important;
+			}
+		}
+	}
+	.features-wrapper {
+		margin:0 0 42px !important;
+	}
+	.services-wrapper{
+		margin-bottom:30px !important;
+		.icon-services {
+			opacity: 1;
+		}
+	}
+}

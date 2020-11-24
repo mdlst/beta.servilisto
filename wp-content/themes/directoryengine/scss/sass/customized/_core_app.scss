@@ -1,0 +1,21 @@
+//== Core anh
+//
+.ae-item {
+	-webkit-transition: opacity 1.5s ease-iHEAn;
+	-moz-transition: opacity 1.5s ease-in;
+	-o-transition: opacity 1.5s ease-in;
+}
+.ae-item.fade-out
+{	
+	opacity:0;
+}
+.ae-item.fade-in
+{
+	opacity:1;
+}
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}

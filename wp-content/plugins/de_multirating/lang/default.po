@@ -1,0 +1,292 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DE MultiRating ver 1.4.2\n"
+"POT-Creation-Date: 2015-04-10 14:24+0700\n"
+"PO-Revision-Date: 2017-01-14 12:10+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: F:/xampp/htdocs/yw/wp-content/plugins/de_multirating\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_x;_e\n"
+"X-Poedit-SearchPath-0: D:/Wordpress/Plugin ET/DE_Multirating/"
+"de_multirating\n"
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/de_multirating.php:40
+msgid "Review content is required."
+msgstr "El contenido de la opinión es obligatoria."
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/de_multirating.php:41
+msgid "Please rate all criterias."
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/de_multirating.php:77
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/de_multirating.php:78
+msgid "Review criteias"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/de_multirating.php:79
+msgid "Search review criteias"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/de_multirating.php:80
+msgid "Popular review criteias"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/de_multirating.php:81
+msgid "All review criteias"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/de_multirating.php:82
+msgid "Edit review criteias"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/de_multirating.php:83
+msgid "Update review criteias"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/de_multirating.php:84
+msgid "Add New review criteias"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/de_multirating.php:85
+msgid "New review criteia Name"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/de_multirating.php:86
+msgid "Add or remove review criteia"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/de_multirating.php:87
+msgid "Choose from most used enginetheme "
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/de_multirating.php:88
+msgid "Review criteia"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/functions.php:87
+msgid "You just can add more criterias."
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/reviews.php:85
+msgid "You have to login to post review."
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/reviews.php:113
+msgid "You can only rate a place for one time."
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/reviews.php:135
+msgid "Please wait 2 minutes after each action submission."
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/reviews.php:173
+msgid "Please rating for all criteria."
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/reviews.php:274
+msgid "Please fill in required field."
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/reviews.php:284
+msgid "Your review has been submitted."
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:17
+msgid "General setting"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:25
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:35
+msgid "Maximum number of criterias"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:28
+msgid "Set up how many criterias a place can have. (Recommend < 5)"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:37
+msgid "eg:5"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:46
+msgid "Review criterias"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:51
+msgid "Review criterias."
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:60
+msgid "Order options"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:63
+msgid "Select the argument option to order review criterias."
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:70
+msgid "name"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:71
+msgid "count"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:72
+msgid "slug"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:73
+msgid "term_group"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:74
+msgid "term_order"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:75
+msgid "term_id"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:76
+msgid "none"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:78
+msgid "Select orderby"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:86
+msgid "ASC"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:87
+msgid "DESC"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:89
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:92
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:93
+msgid "Select order"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:111
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:112
+msgid "DE MultiRating"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/settings.php:116
+msgid "MultiRating"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template.php:17
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template.php:40
+msgid "REVIEW CRITERIAS"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template.php:18
+msgid "Select the most suitable one for your business"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template.php:24
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template.php:42
+msgid "Choose review criterias"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template.php:64
+msgid "Overall Rating"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template.php:66
+#, php-format
+msgid "(%s reviews)"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template.php:68
+#, php-format
+msgid "(%s views)"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:17
+#, php-format
+msgid "%d REVIEWS"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:19
+#, php-format
+msgid "%d REVIEW"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:28
+#, php-format
+msgid "%d COMMENTS"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:30
+#, php-format
+msgid "%d COMMENT"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:34
+msgid "0 COMMENT"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:50
+msgid "&larr; Older Reviews"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:51
+msgid "Newer Reviews &rarr;"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:65
+msgid "Comment"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:75
+msgid "ADD REPLY"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:76
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:77
+msgid "CANCEL"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:78
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:96
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:97
+msgid "SUBMIT"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:87
+msgid "ADD REVIEW"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:90
+msgid "REVIEW"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:93
+msgid "description"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:106
+msgid ""
+"YOU MUST <a class=\"authenticate\" href=\"#login_register\">LOGIN</a> TO "
+"SUBMIT A REVIEW"
+msgstr ""
+
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:154
+#: E:\xampp\htdocs\wp\wp-content\plugins\de_multirating/template/comment-place.php:195
+msgid "&nbsp;&nbsp;|&nbsp;&nbsp; Reply"
+msgstr ""

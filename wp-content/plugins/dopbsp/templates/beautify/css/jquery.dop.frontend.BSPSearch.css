@@ -1,0 +1,1309 @@
+@charset "utf-8";
+
+/*
+* Title                   : Pinpoint Booking System WordPress Plugin (PRO)
+* Version                 : 2.1.3
+* File                    : templates/beautify/css/jquery.dop.frontend.BSPSearch.css
+* File Version            : 1.0
+* Created / Last Modified : 14 December 2015
+* Author                  : Dot on Paper
+* Copyright               : © 2012 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Front end search jQuery plugin stylesheet for Beautify theme.
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montaga|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+.DOPBSPSearch-loader{
+    background: url('../images/loader.gif') no-repeat center center;
+    background-color: #f7f6f9;
+    border: 1px solid #f7f6f9;
+    height: 38px;
+    margin: 20px 0;
+}
+
+.DOPBSPSearch-wrapper{
+    border-collapse: collapse;
+    border: none !important;
+    border-spacing: 0;
+     -webkit-box-sizing: content-box; 
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    margin: 20px 0 !important;
+    min-width: 270px;
+    padding: 0 !important;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.DOPBSPSearch-strong{
+    font-weight: bold !important;
+}
+
+.DOPBSPSearch-left{
+    float: left !important;
+}
+
+.DOPBSPSearch-right{
+    float: right !important;
+}
+
+.DOPBSPSearch-hidden{
+    display: none;
+}
+
+.DOPBSPSearch-clear{
+    clear: both;
+}
+
+.DOPBSPSearch-wrapper .dopbsp-column-separator-style,
+.DOPBSPSearch-wrapper .dopbsp-results-style,
+.DOPBSPSearch-wrapper .dopbsp-sidebar-style{
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.DOPBSPSearch-wrapper .dopbsp-column-separator-style{
+    width: 20px;
+}
+
+.DOPBSPSearch-wrapper .dopbsp-sidebar-style{
+    width: 270px;
+}
+
+.DOPBSPSearch-wrapper .dopbsp-column-separator{
+    background: transparent !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.DOPBSPSearch-wrapper td{
+    vertical-align: top !important;
+}
+
+.DOPBSPSearch-wrapper hr{
+    border-bottom: 1px solid #e5ddff !important;
+    display: none;
+    height: 0px;
+    margin: 0 -10px 39px -10px;
+}
+
+/*
+ * *********************************************************** Begin DOP select.
+ */
+.DOPBSPSearch-wrapper .DOPSelect{
+    width: 250px !important;
+}
+
+/*
+ * Single select.
+ */
+.DOPBSPSearch-wrapper .DOPSelect .dopselect-select{
+    background: #ffffff;
+    border: 1px solid #f5ebff;
+}
+
+.DOPBSPSearch-wrapper .DOPSelect .dopselect-select .dopselect-selection{
+    color: #666666 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    height: 28px !important;
+    line-height: 28px !important;
+    width: 210px !important;
+}
+
+.DOPBSPSearch-wrapper .DOPSelect .dopselect-select .dopselect-icon{
+    color: #f5ebff !important;
+    line-height: 28px !important;
+    height: 28px !important;
+    width: 28px !important;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+.DOPBSPSearch-wrapper .DOPSelect .dopselect-select:hover .dopselect-icon{
+    color: #9d8fd1 !important;
+}
+
+.DOPBSPSearch-wrapper .DOPSelect.dopselect-single ul{
+    background: #ffffff !important;
+    border: 1px solid #9d8fd1 !important;
+    width: 248px !important;
+}
+
+.DOPBSPSearch-wrapper .DOPSelect.dopselect-single ul li{
+    background: #ffffff !important;
+    color: #666666 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    height: 30px !important;
+    line-height: 30px !important;
+    width: 230px !important;
+}
+
+.DOPBSPSearch-wrapper .DOPSelect.dopselect-single ul li:hover,
+.DOPBSPSearch-wrapper .DOPSelect.dopselect-single ul li.dopselect-selected{
+    background: #9d8fd1 !important;
+    color: #ffffff !important;
+}
+
+/*
+ * Small single select.
+ */
+.DOPBSPSearch-wrapper .DOPSelect.dopbsp-small{
+    width: 120px !important;
+}
+
+.DOPBSPSearch-wrapper .DOPSelect.dopbsp-small .dopselect-select .dopselect-selection{
+    width: 80px !important;
+}
+
+.DOPBSPSearch-wrapper .DOPSelect.dopbsp-small ul{
+    width: 118px !important;
+}
+
+.DOPBSPSearch-wrapper .DOPSelect.dopbsp-small ul li{
+    width: 110px !important;
+}
+/*
+ * ************************************************************* End DOP select.
+ */
+
+/*
+ * ***************************************************************************** Begin sidebar.
+ */
+.DOPBSPSearch-sidebar{
+    background: none;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.DOPBSPSearch-sidebar .dopbsp-search-sidebar-form{
+    background: #ffffff;
+    border: 1px solid #e5ddff !important;
+    padding: 19px 9px 9px 9px !important
+}
+
+.DOPBSPSearch-sidebar .dopbsp-module{
+    margin: 0 0 20px 0;
+    width: 250px;
+}
+
+.DOPBSPSearch-sidebar .dopbsp-module h4{
+    color: #474747 !important;
+    display: block !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 20px !important;
+    margin: 0 !important;
+    padding: 20px 0 0 0 !important;
+}
+
+.DOPBSPSearch-sidebar .dopbsp-module .dopbsp-input-wrapper,
+.DOPBSPSearch-sidebar .dopbsp-module:last-child{
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+.DOPBSPSearch-sidebar .dopbsp-module .dopbsp-input-wrapper:last-child,
+.DOPBSPSearch-sidebar .dopbsp-module .dopbsp-input-wrapper.DOPBSPSearch-left{
+    margin: 0;
+}
+
+.DOPBSPSearch-sidebar .dopbsp-module .dopbsp-input-wrapper.DOPBSPSearch-left:first-child{
+    margin: 0 10px 0 0;
+}
+
+/*
+ * Begin label.
+ */
+.DOPBSPSearch-sidebar .dopbsp-module .dopbsp-input-wrapper label{
+    color: #acacac;
+    display: block;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    text-decoration: none !important;
+    -webkit-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    transition: color 300ms linear;
+}
+
+.DOPBSPSearch-sidebar .dopbsp-module .dopbsp-input-wrapper label:hover{
+    color: #9d8fd1;
+}
+/*
+ * End label.
+ */
+
+/*
+ * Begin text.
+ */
+.DOPBSPSearch-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text]{
+    -webkit-appearance: none !important;
+    background: #ffffff;
+    border: 1px solid #f5ebff !important;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    color: #666666;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px;
+    font-weight: normal;
+    height: auto;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 4px 9px;
+    width: 230px;
+    -webkit-transition: border-color 300ms linear;
+    -moz-transition: border-color 300ms linear;
+    -o-transition: border-color 300ms linear;
+    transition: border-color 300ms linear;
+}
+
+.DOPBSPSearch-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text]:focus{
+    border: 1px solid #9d8fd1 !important;
+}
+
+.DOPBSPSearch-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text]:disabled{
+    opacity: 0.5;
+}
+
+.DOPBSPSearch-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPSearch-check-in-view,
+.DOPBSPSearch-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPSearch-check-out-view{
+    background: #ffffff url('../images/sprite.png') -5px -116px;
+    padding: 4px 9px 4px 34px !important;
+    width: 205px;
+}
+
+.DOPBSPSearch-sidebar .dopbsp-module .dopbsp-input-wrapper input[type=text].DOPBSPSearch-search{
+    background: #ffffff url('../images/sprite.png') -5px -156px;
+    padding: 4px 9px 4px 34px !important;
+    width: 205px;
+}
+/*
+ * End text.
+ */
+
+/*
+ * Price
+ */
+.DOPBSPSearch-sidebar .dopbsp-module.dopbsp-price{
+    margin: 0 0 23px 10px;
+    width: 230px;
+}
+
+.DOPBSPSearch-sidebar .dopbsp-module.dopbsp-price:last-child{
+    margin: 0 0 15px 10px;
+}
+
+.DOPBSPSearch-sidebar .dopbsp-module.dopbsp-price .dopbsp-input-wrapper{
+    padding: 20px 0 0 0;
+}
+
+.DOPBSPSearch-sidebar .dopbsp-module.dopbsp-price .dopbsp-input-wrapper label{
+    color: #666666;
+    font-style: normal;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.DOPBSPSearch-sidebar .dopbsp-module.dopbsp-price .dopbsp-input-wrapper label:first-child{
+    left: 0;
+}
+
+/*
+ * ***************************************************** Begin jQuery UI slider.
+ */
+.DOPBSPSearch-sidebar .ui-slider{
+    background: #ffffff !important;
+    border: 1px solid #e5ddff !important;
+    border-radius: 6px !important;
+    height: 12px !important;
+    margin: 3px 0 !important;
+    position: relative !important;
+}
+
+.DOPBSPSearch-sidebar .ui-slider-range{
+    background: #e5ddff !important;
+    border-radius: 6px !important;
+    height: 12px !important;
+    margin: 0 !important;
+    position: absolute !important;
+}
+
+.DOPBSPSearch-sidebar .ui-slider-handle{
+    background: #ffffff !important;
+    border: 5px solid #9d8fd1 !important;
+    border-radius: 10px !important;
+     -webkit-box-sizing: content-box; 
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    height: 10px !important;
+    margin: 0 0 0 -10px !important;
+    position: absolute !important;
+    text-decoration: none !important;
+    top: -4px !important;
+    width: 10px !important;
+}
+
+.DOPBSPSearch-sidebar .ui-slider-handle:hover{
+    border: 5px solid #9d8fd1 !important;
+}
+
+.DOPBSPSearch-sidebar .ui-slider-handle .DOPBSPSearch-price-info{
+    color:#666666 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 100 !important;
+    position: absolute !important;
+    top:-25px !important;
+    left:-10px !important;
+    min-width: 50px;
+}
+/*
+ * ***************************************************** Begin jQuery UI slider.
+ */
+
+/*
+ * ************************************************* Begin jQuery UI datepicker.
+ */
+.DOPBSPSearch-datepicker.ui-datepicker{
+    background: #ffffff !important;
+    border: 1px solid #9d8fd1 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 0 !important;
+    width: 248px !important;
+}
+
+/*
+ * jQuery UI datepicker header.
+ */
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-header{
+    background: #9d8fd1 !important;
+    border-bottom: 1px solid #9d8fd1 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+}
+
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next,
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev{
+    background-color: #9d8fd1 !important;
+    background-image: url('../images/sprite.png') !important;
+    border: none !important;
+    -webkit-border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    border-radius: 30px !important;
+    cursor: pointer !important;
+    height: 30px !important;
+    left: auto !important;
+    position: relative !important;
+    right: auto !important;
+    top: 4px !important;
+    width: 30px !important;
+    -webkit-transition: background-color 300ms linear !important;
+    -moz-transition: background-color 300ms linear !important;
+    -o-transition: background-color 300ms linear !important;
+    transition: background-color 300ms linear !important;
+}
+
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next:hover,
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev:hover{
+    background-color: #474747 !important;
+}
+
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next.ui-state-disabled,
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev.ui-state-disabled{
+    display: none !important;
+}
+
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next{
+    background-position: -285px -5px !important;
+    float: right !important;
+    right: 4px !important;
+}
+
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev{
+    background-position: -245px -5px !important;
+    float: left !important;
+    left: 4px !important;
+}
+
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-next .ui-icon,
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-prev .ui-icon{
+    display: none !important;
+}
+
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-title,
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-month,
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-year{
+    color: #ffffff !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    line-height: 38px !important;
+    text-align: center !important;
+}
+
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-header .ui-datepicker-title{
+    margin: 0 38px !important;
+}
+
+/*
+ * jQuery UI datepicker calendar.
+ */
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-calendar{
+    border-collapse: collapse !important;
+    border-spacing: 0 !important;
+    margin: 0 !important;
+    table-layout: fixed !important;
+    width: 100% !important;
+}
+
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-calendar th{
+    background: #f7f6f9 !important;
+    border: 1px solid #e5ddff !important;
+    border-top: none !important;
+    color: #474747 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: normal !important;
+    line-height: 18px !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-calendar td{
+    border: 1px solid #e5ddff !important;
+    padding: 0 !important;
+}
+
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-calendar td.ui-datepicker-other-month{
+    background: #f7f6f9 !important;
+    line-height: 17px !important;
+}
+
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-calendar .ui-state-disabled span,
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-calendar a{
+    background: #ffffff !important;
+    border: 0 !important;
+    color: #acacac !important;
+    display: block !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 300 !important;
+    line-height: 19px !important;
+    padding: 0 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-calendar a{
+    color: #666666 !important;
+}
+
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-calendar a.ui-state-active{
+    background-color: #9d8fd1 !important;
+    color: #ffffff !important;
+}
+
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-calendar a.ui-state-active,
+.DOPBSPSearch-datepicker.ui-datepicker .ui-datepicker-calendar a:hover{
+    border: 1px solid #9d8fd1 !important;
+    line-height: 17px !important;
+}
+/*
+ * *************************************************** End jQuery UI datepicker.
+ */
+/*
+ * ***************************************************************************** End sidebar.
+ */
+
+/*
+ * ***************************************************************************** Begin content.
+ */
+.DOPBSPSearch-content{
+    background: none;
+    border: none !important;
+    padding: 0 !important
+}
+
+.DOPBSPSearch-content .dopbsp-loader{
+    background: url('../images/loader.gif') no-repeat center center;
+    background-color: transparent;
+    height: 40px;
+    width: 100%;
+}
+/*
+ * ***************************************************************** Begin sort.
+ */
+.DOPBSPSearch-sort{
+    float: left;
+    margin: 0 0 15px 0 !important;
+    overflow: hidden;
+}
+
+.DOPBSPSearch-sort h5{
+    color: #474747 !important;
+    display: block !important;
+    float: left;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    line-height: 20px !important;
+    margin: 0 10px 0 0 !important;
+    padding: 20px 0 0 0 !important;
+}
+
+.DOPBSPSearch-sort .DOPSelect{
+    float: left;
+    margin: 15px 5px 0 0;
+}
+
+.DOPBSPSearch-sort a{
+    background-color: #e5ddff;
+    background-image: url('../images/sprite.png');
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    list-style: none;
+    margin: 15px 0 0 0;
+    text-decoration: none;
+    width: 30px;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+} 
+
+.DOPBSPSearch-sort a.dopbsp-asc{
+    background-position: 0 -80px;
+}
+
+.DOPBSPSearch-sort a.dopbsp-desc{
+    background-position: -30px -80px;
+}
+
+.DOPBSPSearch-sort a .dopbsp-info{
+    background-color: #9d8fd1;
+    color: #ffffff;
+    display: none;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    max-width: 230px;
+    margin: 32px 0 0 0;
+    padding: 10px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1000000;
+}
+
+.DOPBSPSearch-sort a:hover{
+    background-color: #9d8fd1;
+}
+
+.DOPBSPSearch-sort a.dopbsp-asc:hover .dopbsp-info.dopbsp-asc{
+    display: block;
+}
+
+.DOPBSPSearch-sort a.dopbsp-desc:hover .dopbsp-info.dopbsp-desc{
+    display: block;
+}
+/*
+ * ******************************************************************* End sort.
+ */
+
+/*
+ * **************************************************************** Begin views.
+ */
+.DOPBSPSearch-view{
+    float: right;
+    margin: 15px 0 15px 0 !important;
+    padding: 0;
+    overflow: hidden;
+}
+
+.DOPBSPSearch-view li{
+    background-color: #e5ddff;
+    background-image: url('../images/sprite.png');
+    cursor: pointer;
+    float: left;
+    height: 30px;
+    list-style: none;
+    margin: 0 5px 0 0;
+    width: 30px;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+}
+
+.DOPBSPSearch-view li:last-child{
+    margin: 0;
+}
+
+.DOPBSPSearch-view li.dopbsp-view-list{
+    background-position: -60px -80px;
+}
+
+.DOPBSPSearch-view li.dopbsp-view-grid{
+    background-position: -90px -80px;
+}
+
+.DOPBSPSearch-view li.dopbsp-view-map{
+    background-position: -120px -80px;
+}
+
+.DOPBSPSearch-view li .dopbsp-info{
+    background-color: #9d8fd1;
+    color: #ffffff;
+    display: none;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    max-width: 230px;
+    margin: 32px 0 0 0;
+    padding: 10px;
+    position: absolute;
+    white-space: nowrap;
+    z-index: 1000000;
+}
+
+.DOPBSPSearch-view li:hover,
+.DOPBSPSearch-view li.dopbsp-selected{
+    background-color: #9d8fd1;
+}
+
+.DOPBSPSearch-view li:hover .dopbsp-info{
+    display: block;
+}
+/*
+ * ****************************************************************** End views.
+ */
+
+/*
+ * ************************************************************** Begin results.
+ */
+.DOPBSPSearch-results{
+}
+
+/*
+ * Begin list.
+ */
+.DOPBSPSearch-results .dopbsp-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.DOPBSPSearch-results .dopbsp-list li{
+    -webkit-box-shadow: 0 0 10px 2px rgba(3, 3, 3, 0.1);
+    box-shadow: 0 0 10px 2px rgba(3, 3, 3, 0.1);
+    margin: 0 0 20px 0;
+    overflow: hidden;
+}
+
+.DOPBSPSearch-results .dopbsp-list li .dopbsp-image{
+    float: left;
+    height: 220px;
+    margin: 0;
+    padding: 0;
+    width: 270px;
+}
+
+.DOPBSPSearch-results .dopbsp-list li .dopbsp-image a{
+    background-color: rgba(3, 3, 3, 0.1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    border: none;
+    display: block;
+    height: 220px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-decoration: none;
+    width: 270px;
+}
+
+.DOPBSPSearch-results .dopbsp-list li .dopbsp-image img{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: 220px;
+    max-width: none;
+    visibility: hidden;
+    width: auto;
+}
+
+.DOPBSPSearch-results .dopbsp-list li .dopbsp-content{
+    height: 220px;
+    margin: 0 0 0 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.DOPBSPSearch-results .dopbsp-list li .dopbsp-content h3{
+    margin: 0;
+    padding: 0;
+}
+
+.DOPBSPSearch-results .dopbsp-list li .dopbsp-content h3 a{
+    color: #171717;
+    display: block;
+    font-family: 'Montaga', serif !important;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 30px;
+    margin: 0;
+    padding: 20px 0 0 0;
+    text-decoration: none;
+    -webkit-transition: color 600ms linear;
+    -moz-transition: color 600ms linear;
+    -o-transition: color 600ms linear;
+    transition: color 600ms linear;
+}
+
+.DOPBSPSearch-results .dopbsp-list li .dopbsp-content h3 a:hover{
+    color: #9d8fd1;
+}
+
+.DOPBSPSearch-results .dopbsp-list li .dopbsp-content .dopbsp-address{
+    color: #666666;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.DOPBSPSearch-results .dopbsp-list li .dopbsp-content .dopbsp-price-wrapper{
+    border-bottom: 1px solid #e5ddff;
+    color: #9d8fd1;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 15px;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 20px 15px 0;
+    padding: 0 0 34px 0;
+}
+
+.DOPBSPSearch-results .dopbsp-list li .dopbsp-content .dopbsp-price-wrapper .dopbsp-price{
+    color: #9d8fd1;
+    font-weight: normal;
+}
+
+.DOPBSPSearch-results .dopbsp-list li .dopbsp-content .dopbsp-text{
+    color: #666666;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+    height: 60px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.DOPBSPSearch-results .dopbsp-list li .dopbsp-content .dopbsp-view{
+    background: none;
+    bottom: 20px;
+    color: #9d8fd1;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 15px;
+    font-weight: 600;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.DOPBSPSearch-results .dopbsp-list li .dopbsp-content .dopbsp-view:after{
+    content: '\00a0\00a0\00a0\25b6';
+    font-size: 10px;
+}
+
+.DOPBSPSearch-results .dopbsp-list li .dopbsp-content .dopbsp-view:hover{
+    color: #666666;
+}
+/*
+ * End list.
+ */
+
+/*
+ * Begin grid.
+ */
+.DOPBSPSearch-results .dopbsp-grid{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li{
+    -webkit-box-shadow: 0 0 10px 2px rgba(3, 3, 3, 0.1);
+    box-shadow: 0 0 10px 2px rgba(3, 3, 3, 0.1);
+    float: left;
+    margin: 0 20px 20px 0;
+    overflow: hidden;
+    width: 270px;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li:nth-child(3n){
+    margin: 0 0 20px 0;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li .dopbsp-image{
+    height: 220px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    width: 270px;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li .dopbsp-image a{
+    background-color: rgba(3, 3, 3, 0.1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    border: none;
+    display: block;
+    height: 220px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-decoration: none;
+    width: 270px;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li .dopbsp-image img{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: 220px;
+    max-width: none;
+    visibility: hidden;
+    width: auto;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li .dopbsp-content{
+    height: 200px;
+    margin: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li .dopbsp-content h3{
+    margin: 0;
+    padding: 0;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li .dopbsp-content h3 a{
+    color: #171717;
+    display: block;
+    font-family: 'Montaga', serif !important;
+    font-size: 24px;
+    font-weight: normal;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-decoration: none;
+    -webkit-transition: color 600ms linear;
+    -moz-transition: color 600ms linear;
+    -o-transition: color 600ms linear;
+    transition: color 600ms linear;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li .dopbsp-content h3 a:hover{
+    color: #9d8fd1;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li .dopbsp-content .dopbsp-address{
+    color: #666666;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li .dopbsp-content .dopbsp-price-wrapper{
+    border-bottom: 1px solid #e5ddff;
+    color: #9d8fd1;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 15px;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 20px 15px 0;
+    padding: 0 0 34px 0;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li .dopbsp-content .dopbsp-price-wrapper .dopbsp-price{
+    color: #9d8fd1;
+    font-weight: normal;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li .dopbsp-content .dopbsp-text{
+    color: #666666;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+    height: 60px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li .dopbsp-content .dopbsp-view{
+    background: none;
+    bottom: 20px;
+    color: #9d8fd1;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 15px;
+    font-weight: 600;
+    height: 20px;
+    left: 20px;
+    line-height: 20px;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li .dopbsp-content .dopbsp-view:after{
+    content: '\00a0\00a0\00a0\25b6';
+    font-size: 10px;
+}
+
+.DOPBSPSearch-results .dopbsp-grid li .dopbsp-content .dopbsp-view:hover{
+    color: #666666;
+}
+/*
+ * End grid.
+ */
+
+.DOPBSPSearch-results .dopbsp-list li.dopbsp-no-data,
+.DOPBSPSearch-results .dopbsp-grid li.dopbsp-no-data{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #171717;
+    font-family: 'Montaga', serif !important;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 40px;
+    margin: 0;
+    padding: 15px 0 0 0;
+}
+
+/*
+ * Begin map.
+ */
+.DOPBSPSearch-results .dopbsp-map{
+    height: 500px;
+    margin: 0 0 40px 0;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox{
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+     -webkit-box-sizing: content-box; 
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 100px;
+    padding: 10px;
+    width: 360px !important;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox img{
+    background: #9f9f9f;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox img:hover{
+    background: #9d8fd1;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-locations{
+    list-style: none;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-locations li{
+    height: 100px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    width: 350px;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-locations li:first-child{
+    -webkit-transition: margin 100ms linear;
+    -moz-transition: margin 100ms linear;
+    -o-transition: margin 100ms linear;
+    transition: margin 100ms linear;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-locations li:last-child{
+    margin: 0;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-locations li .dopbsp-image{
+    float: left;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-locations li .dopbsp-image a{
+    background-color: #858585;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    border: none;
+    display: block;
+    height: 100px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-decoration: none;
+    width: 100px;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-locations li .dopbsp-image img{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: 100px;
+    max-width: none;
+    visibility: hidden;
+    width: auto;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-locations li .dopbsp-content{
+    height: 100px;
+    margin: 0 0 0 120px;
+    overflow: hidden;
+    position: relative;
+    width: 235px;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-locations li .dopbsp-content h3{
+    margin: 0;
+    padding: 0;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-locations li .dopbsp-content h3 a{
+    color: #464646;
+    display: block;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    -webkit-transition: color 600ms linear;
+    -moz-transition: color 600ms linear;
+    -o-transition: color 600ms linear;
+    transition: color 600ms linear;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-locations li .dopbsp-content h3 a:hover{
+    color: #9d8fd1;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-locations li .dopbsp-content .dopbsp-address{
+    color: #666666;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-locations li .dopbsp-content .dopbsp-price-wrapper{
+    color: #666666;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px;
+    font-weight: 300;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-locations li .dopbsp-content .dopbsp-price-wrapper .dopbsp-price{
+    color: #9d8fd1;
+    font-weight: 600;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-navigation{
+    bottom: 10px;
+    height: 31px;
+    position: absolute;
+    right: 10px;
+    width: 15px;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-navigation .dopbsp-prev,
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-navigation .dopbsp-next{
+    background-color: #9f9f9f;
+    background-image: url('../images/sprite.png');
+    height: 15px;
+    position: absolute;
+    text-decoration: none;
+    width: 15px;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-navigation .dopbsp-prev{
+    background-position: -150px -80px;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-navigation .dopbsp-next{
+    background-position: -150px -95px;
+    margin: 16px 0 0 0;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-navigation .dopbsp-prev:hover,
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-navigation .dopbsp-next:hover{
+    background-color: #9d8fd1;
+}
+
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-navigation .dopbsp-prev.dopbsp-disabled,
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-navigation .dopbsp-next.dopbsp-disabled,
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-navigation .dopbsp-prev.dopbsp-disabled:hover,
+.DOPBSPSearch-results .dopbsp-map .dopbsp-infobox .dopbsp-navigation .dopbsp-next.dopbsp-disabled:hover{
+    background-color: #9f9f9f;
+    opacity: 0.2;
+}
+
+.DOPBSPSearch-results .dopbsp-map .gm-style img,
+.DOPBSPSearch-results .dopbsp-map .gmnoprint img{
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    max-width: none !important; 
+}
+/*
+ * End map.
+ */
+
+/*
+ * Begin pagination.
+ */
+.DOPBSPSearch-results .dopbsp-pagination{
+    float: right;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.DOPBSPSearch-results .dopbsp-pagination li{
+    background-color: transparent;
+    color: #666666;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 15px;
+    font-weight: normal;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 5px 0 0;
+    text-align: center;
+    width: 30px;
+    -webkit-transition: background-color 300ms linear, color 300ms linear;
+    -moz-transition: background-color 300ms linear, color 300ms linear;
+    -o-transition: background-color 300ms linear, color 300ms linear;
+    transition: background-color 300ms linear, color 300ms linear;
+}
+
+.DOPBSPSearch-results .dopbsp-pagination li:last-child{
+    margin: 0;
+}
+
+.DOPBSPSearch-results .dopbsp-pagination li:hover,
+.DOPBSPSearch-results .dopbsp-pagination li.dopbsp-selected{
+    background-color: #9d8fd1;
+    color: #ffffff;
+}
+/*
+ * End pagination.
+ */
+/*
+ * **************************************************************** End results.
+ */
+/*
+ * ***************************************************************************** End content.
+ */
+
+
+/*
+ * Mobile.
+ */
+@media screen and (max-width: 759px){
+    .DOPBSPSearch-sidebar,
+    .DOPBSPSearch-content,
+    td.dopbsp-column-separator{
+        display:block;
+    }
+    
+    .DOPBSPSearch-content{
+        margin-top: 20px;
+    }
+}

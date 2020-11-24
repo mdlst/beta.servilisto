@@ -1,0 +1,97 @@
+table.tablesorter {
+    font-family: arial;
+    background-color: #CDCDCD;
+    margin: 10px 0pt 15px;
+    font-size: 8pt;
+    width: 95%;
+    text-align: left;
+}
+
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+    background-color: #e6EEEE;
+    border: 1px solid #FFF;
+    font-size: 8pt;
+    padding: 4px;
+}
+
+table.tablesorter thead tr .header {
+    /*background-image: url(bg.gif);*/
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+
+table.tablesorter thead td {
+    padding: 4px;
+}
+
+table.tablesorter tbody td {
+    color: #3D3D3D;
+    padding: 4px;
+    background-color: #FFF;
+    vertical-align: middle;
+}
+
+table.tablesorter tbody tr.odd td {
+    background-color: #F0F0F6;
+}
+
+table.tablesorter thead tr .headerSortUp {
+    background-image: url(asc.gif);
+}
+
+table.tablesorter thead tr .headerSortDown {
+    background-image: url(desc.gif);
+}
+
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+    background-color: #8dbdd8;
+}
+
+table .header {
+    cursor: pointer;
+}
+
+.last_year_checkbox {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main-content .select_option{
+    display: inline-block;
+}
+
+.titleh3{
+    font-size: 25px;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.main-content .controles {
+    margin: 35px 0px;
+}
+
+.main-content .control-label {
+    font-weight: bold;
+    padding-left: 8px;
+}
+
+.main-content .controls select.select_option {
+    width: 100%;
+}
+
+.pagging {
+    margin-top: 40px;
+}
+
+.page-numbers {
+    background: none repeat scroll 0 0 #eee;
+    border: 1px solid;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+a.page-numbers:hover {
+    border: 1px solid;
+    color: #000;
+}

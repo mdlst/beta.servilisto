@@ -1,0 +1,3 @@
+var DOPBSPFrontEndRules=new function(){'use strict';var $=jQuery.noConflict();this.__construct=function(){};this.getMaxTimeLapse=function(ID){var dataRules=DOPBSPFrontEnd.calendar[ID]['rules']['data'];if(dataRules['rule']!=null){return dataRules['id']!=='0'?parseFloat(dataRules['rule']['time_lapse_max']):0;}
+else{return 0;}};this.getMinTimeLapse=function(ID){var dataRules=DOPBSPFrontEnd.calendar[ID]['rules']['data'];if(dataRules['rule']!=null){return dataRules['id']!=='0'?parseFloat(dataRules['rule']['time_lapse_min']):0;}
+else{return 0;}};return this.__construct();};

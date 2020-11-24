@@ -1,0 +1,127 @@
+//== Page Blog Detail
+//
+#blog-page {
+	background: #ecf0f1;
+}
+.blog-detail-wrapper {
+	margin-top: 34px;
+	background: #FFF;
+	border: 1px solid #ecf0f1;
+	.section-detail-wrapper {
+		position: relative;
+		.title-blog {
+			padding-right: 170px;
+			color:#2c3e50;
+		}
+		.time-calendar {
+			position: absolute;
+			top: 28px;
+			right:20px;
+			color: $color_base_third;
+			i {
+				margin-right: 6px;
+			}
+		}
+		.title-lastest {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: 600;
+			color: $color_base_third;
+		}
+		.list-lastest-news {
+			li {
+				padding-left: 20px;
+				line-height: 1.7;
+				a {
+					font-size: $font_size_base;
+					color: $color_base_third;
+					i {
+						color: $color_base_fifth;
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+	.comments .section-detail-wrapper .review-wrapper .title-comments {
+		padding: 0 20px;
+	}
+	.comments .section-detail-wrapper .review-wrapper .media-list {
+		padding: 0 6px;
+	}
+	.comments > .comment-respond {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.blog-content-wrapper {
+	color: $color_base_sevth;
+	p {
+		line-height: 1.65;
+	}
+	ul {
+		padding-left: 17px;
+		li {
+			list-style-type: disc;
+			color: $color_base_third;
+			line-height: 1.7;
+			padding-bottom: 2px;
+		}
+	}
+	ol {
+		padding-left: 15px;
+		li {
+			list-style-type: decimal;
+			color: $color_base_third;
+			line-height: 1.6;
+			padding-bottom: 2px;
+		}
+	}
+	label {
+
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.alignnone{
+	margin: 10px 0;
+	max-width: 100%;
+	height: auto;
+}
+.aligncenter,
+div.aligncenter{
+	display:block;
+	margin:5px auto
+}
+.alignright{
+	float:right;
+	margin:5px 0 20px 20px
+}
+.alignleft{
+	float:left;
+	margin:5px 20px 20px 0;
+}
+.aligncenter{
+	display:block;
+	margin:10px auto;
+}
+a img.alignright {
+	float:right;
+	margin:5px 0 20px 20px
+}
+a img.alignnone{
+	margin:5px 20px 20px 0;
+}
+a img.alignleft {
+	float:left;
+	margin:5px 20px 20px 0;
+}
+a img.aligncenter{
+	display:block;
+	margin-left:auto;
+	margin-right:auto
+}

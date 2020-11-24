@@ -1,0 +1,40 @@
+//== Page Static
+//
+.static-detail-wrapper {
+	background: #FFF;
+	margin-top: 34px;
+}
+
+.static-content-wrapper {
+	color: $color_base_third;
+	p {
+		line-height: 24px;
+		margin-bottom: 5px;
+	}
+	ul {
+		li {
+			list-style-type: disc;
+			color: $color_base_third;
+			line-height: 1.7;
+			padding-bottom: 2px;
+		}
+	}
+	ol {
+		li {
+			list-style-type: decimal;
+			color: $color_base_third;
+			line-height: 1.6;
+			padding-bottom: 2px;
+		}
+	}
+	label {
+		font-weight: 600;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	b {
+		color: $color_base_sevth;
+	}
+}

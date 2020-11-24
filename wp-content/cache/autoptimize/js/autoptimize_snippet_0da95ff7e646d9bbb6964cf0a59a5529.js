@@ -1,0 +1,3 @@
+DOT.methods.calendar_availability=new function(){'use strict';var $=jQuery.noConflict();this.data=new Array();this.__construct=function(){};this.verify=function(id,dayStart,dayEnd,timeStart,timeEnd){var availability=DOT.methods.calendar_availability.data[id],dateStart,dateEnd,i;timeStart=timeStart===undefined?'00:00:00':timeStart+':00';timeEnd=timeEnd===undefined?'23:59:59':DOPPrototypes.getPrevTime(timeEnd+':00',1,'seconds');dateStart=dayStart+' '+timeStart;dateEnd=dayEnd+' '+timeEnd;for(i=0;i<=availability.length-1;i++){if(availability[i]['date_start']<=dateStart&&availability[i]['date_end']>=dateEnd){return true;}
+else if(availability[i]['date_start']>dateEnd){return false;}}
+return false;};return this.__construct();};

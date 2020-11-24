@@ -1,0 +1,13 @@
+@mixin _transition($param) {
+	-webkit-transition: $param;
+    -moz-transition: $param;
+    -o-transition: $param;
+    -ms-transition: $param;
+    transition: $param;
+}
+
+@mixin _transform($param) {
+	-ms-transform: $param; /* IE 9 */
+    -webkit-transform: $param; /* Chrome, Safari, Opera */
+    transform: $param;
+}

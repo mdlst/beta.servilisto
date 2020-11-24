@@ -1,0 +1,50 @@
+body {
+	font-family: $font_family_default;
+	font-size: $font_size_base;
+	line-height: 1em;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.67em 0;
+}
+h1 {
+	font-size: 24px;
+	font-weight: 600;
+}
+h2 {
+	font-size: 20px;
+	font-weight: 600;
+}
+h3 {
+	font-size: 18px;
+	font-weight: 600;
+}
+h4 {
+	font-size: 16px;
+	font-weight: 600;
+}
+h5 {
+	font-size: 14px;
+	font-weight: 600;
+}
+h6 {
+	font-size: 12px;
+	font-weight: 600;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	&:hover, &:focus {
+		text-decoration: none;
+		outline: none;
+	}
+}
+ul, li {
+	// list-style-type: none;
+}
+.star-off-png, .cancel-off-png {
+	color:#5d5d5d;
+}
+.cancel-on-png, .star-on-png, .star-half-png {
+	color: $color_base_sixth;
+}
+

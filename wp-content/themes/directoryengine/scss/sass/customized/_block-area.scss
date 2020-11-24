@@ -1,0 +1,76 @@
+//== Block Area
+//
+.list-areas {
+	padding: 0;
+	> li {
+		margin-bottom: 30px;
+		padding-top: 0;
+		padding-bottom: 0;
+		list-style-type: none;
+	}
+}
+.area-wrapper {
+	position: relative;
+	width: 100%;
+	height: 172px;
+	img {
+		min-height: 100%;
+		max-height: 100%;
+		min-width: 100%;
+		max-width: 100%;
+	}
+	.area-info {
+		position: absolute;
+		bottom: 12px;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		h2 {
+			color: #FFF;
+			margin-bottom: 8px;
+		}
+		span {
+			color: #FFF;
+		}
+	}
+}
+
+.list-areas {
+	&.vertical {
+		li {
+			margin-bottom: 15px;
+			a {
+				position: relative;
+			    display: block;
+			    padding: 12px 15px;
+			    padding-bottom: 10px;
+			    background-color: #fff;
+			    box-shadow: 0 0 0 1px #e6e9ea;
+			    .area-name {
+			    	font-size: $font_size_medium;
+				    color: $color_base_sevth;
+				    position: relative;
+				    z-index: 9;
+				    @include text_nowrap();
+				    padding-right: 60px;
+				    line-height: 1.3;
+			    }
+			    .area-number {
+			    	border-radius: 10px;
+				    background-clip: padding-box;
+				    background: $color_base_sevth;
+				    position: absolute;
+				    top: 9px;
+				    right: 15px;
+				    width: 40px;
+				    padding: 5px 0;
+				    vertical-align: middle;
+				    color: #fff;
+				    font-size: $font_size_small;
+				    z-index: 9;
+				    text-align: center;
+			    }
+			}
+		}
+	}
+}

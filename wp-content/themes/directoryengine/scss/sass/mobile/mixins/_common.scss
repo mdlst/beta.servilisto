@@ -1,0 +1,30 @@
+@mixin text_nowrap() {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@mixin ribbon() {
+	display: block;
+	position: absolute;
+	background: #eb5256;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+	padding: 5px 15px;
+	bottom: 10px;
+	z-index: 11;
+	line-height: 1.45;
+	&::after {
+		content: "";
+	    position: absolute;
+	    display: block;
+	    border: 15px solid #eb5256;
+	    z-index: -1;
+	    bottom: 0;
+		right: -7px;
+	    border-left-width: 1.5em;
+	    border-right-color: transparent;
+	}
+}

@@ -1,0 +1,55 @@
+//== Page Login
+//
+#page_signup_form{
+	display: none;
+}
+.login-wrapper .section-detail-wrapper {
+	padding: 10px 20px;
+	border-bottom: 1px solid #ecf0f1;
+	overflow: hidden;
+}
+.page_link_forgot_pass {
+	color: #8B97B1;
+	font-size: 13px;
+	font-style: italic;
+	display: inline-block;
+	position: absolute;
+}
+.form_modal_style .page_link_sign_up, .form_modal_style .page_link_sign_in{
+	margin-left:30px;
+}
+
+//== Social Login
+//
+
+ul.list-social-login{
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	margin-top: 1px;
+	> li {
+		display: inline-block;
+		margin-left: 5px;
+		.sc-icon {
+			font-size: 30px;
+		}
+		.color-facebook {
+			color:#3b5998;
+		}
+		.color-google {
+			color:#dd4b39;
+		}
+		.color-twitter {
+			color:#00aced;
+		}
+		.social-text {
+			display: none;
+		}
+	}
+}
+.social-auth {
+	width: 600px;
+	margin: 0 auto;
+	text-align: left;
+	max-width: 100%;
+}

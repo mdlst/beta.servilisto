@@ -1,0 +1,124 @@
+//== Testimonial
+//
+.testimonial-wrapper {
+	.customNavigation {
+		display:block;
+		position:relative;
+		z-index:9;
+		a {
+			position:absolute;
+			width:30px;
+			height:30px;
+			display:block;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			cursor:pointer;
+			font-size:24px;
+			color: #6c7a8a;
+			top:23px;
+			&.prev-testi {
+				left: -60px;
+			}
+			&.next-testi {
+				right: -60px;
+			}
+		}
+	}
+}
+
+#testimonial {
+	.avatar-info {
+	    min-height: 70px;
+	    float: left;
+	    margin-right: 15px;
+	    .avatar {
+	    	width:70px;
+			height:70px;
+			display:inline-block;
+			float:left;
+			img {
+				width:100%;
+				height: auto;
+			}
+	    }
+	}
+	.quote-testi {
+		display: block;
+		vertical-align:bottom;
+		color: $color_base_sevth;
+		font-size: $font_size_base;
+		font-style: italic;
+		line-height: 1.5;
+		padding-left: 85px;
+		padding-right: 30px;
+		.name {
+			color: $color_base_sevth;
+			font-size: $font_size_medium;
+			font-weight: 700;
+			vertical-align: middle;
+			margin: 0;
+			display: block;
+			margin-bottom: 10px;
+			font-style:normal;
+		}
+		img {
+			margin-right: 5px;
+			width: auto;
+		}
+	}
+	.owl-controls {
+		display: none !important;
+	}
+}
+
+@media (max-width: $screen-md-max) { // max-wdith: 1199px
+	.testimonial-wrapper {
+		.customNavigation {
+			display: none;
+		}
+	}
+	#testimonial {
+		.owl-controls {
+			display: block !important;
+			margin-top: 16px;
+		}
+	}
+	.owl-theme .owl-controls .owl-page {
+		opacity: 1;
+		&.active {
+			span {
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
+		span{
+			background: none !important;
+			border: 1px solid #d6dadb;
+			width: 14px;
+			height: 14px;
+			position: relative;
+			opacity: 1;
+			&::after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 3px;
+				left: 3px;
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				-moz-border-radius: 50%;
+				-webkit-border-radius: 50%;
+				background: #1984d6;
+				opacity: 0;
+			}
+		}
+
+	}
+}
+

@@ -1,0 +1,32 @@
+[16-Nov-2019 15:37:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php on line 3
+[18-Nov-2019 11:25:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php on line 3
+[14-Dec-2019 03:47:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php on line 3
+[16-Dec-2019 04:11:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php on line 3
+[13-Jan-2020 23:45:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php on line 3
+[16-Jan-2020 01:19:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php on line 3
+[17-Apr-2020 22:25:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php on line 3
+[25-Apr-2020 18:04:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/qr26jagm/public_html/wp-content/themes/directoryengine/404.php on line 3

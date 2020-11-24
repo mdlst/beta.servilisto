@@ -1,0 +1,54 @@
+.filter-wrapper .widgettitle, .widgettitle {
+	color: $color_font_title;
+    font-size: $font_size_large;
+    font-weight: 300;
+    display: inline-block;
+    margin: 0;
+    line-height: 1.3;
+}
+.widget > .widgettitle {
+	margin: 0 0 22px;
+}
+.vc_col-sm-12 .list-places .hidden-img, 
+.vc_col-md-12 .list-places .hidden-img {
+	height: 270px;
+}
+.vc_col-sm-12 .list-places.fullwidth .hidden-img,
+.vc_col-md-12 .list-places.fullwidth .hidden-img {
+	width: 200px !important;
+	height: 150px !important;
+}
+.vc_col-sm-9 .list-places .hidden-img, 
+.col-sm-9 .list-places .hidden-img,
+.vc_col-md-9 .list-places .hidden-img, 
+.col-md-9 .list-places .hidden-img {
+	height: 172px !important; 
+}
+.vc_col-sm-9 .list-places.fullwidth .hidden-img, .col-sm-9 .list-places.fullwidth .hidden-img,
+.vc_col-md-9 .list-places.fullwidth .hidden-img, .col-md-9 .list-places.fullwidth .hidden-img {
+	width: 200px !important;
+	height: 150px !important;
+}
+
+//== Review
+//
+.vc_col-md-3 .list-place-review .col-md-4.col-sm-6.review-item {
+	width: 100% !important;
+}
+
+//== Responsive
+//
+@media (max-width: $screen-md-max) { // max-wdith: 1199px
+	.vc_col-md-12 .list-places .hidden-img {
+		height: 210px !important;
+	}
+}
+@media (max-width: $screen-sm-max) { // max-width: 991px
+	.filter-wrapper {
+		margin-top: 30px;
+	}
+	.vc_col-md-12 .list-places .hidden-img,
+	.vc_col-md-9 .list-places .hidden-img {
+		height: 270px !important;
+	}
+}

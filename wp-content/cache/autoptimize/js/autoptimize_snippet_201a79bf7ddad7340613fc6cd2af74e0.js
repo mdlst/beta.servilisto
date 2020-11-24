@@ -1,0 +1,1 @@
+DOT.methods.calendar_schedule=new function(){'use strict';var $=jQuery.noConflict();this.data=new Array();this.default=new Array();this.__construct=function(){};return this.__construct();};

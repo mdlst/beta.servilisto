@@ -1,0 +1,65 @@
+/*
+Theme Name: Write Blog
+
+Adding support for languages written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+https://codex.wordpress.org/Right-to-Left_Language_Support
+
+*/
+
+.site .site-branding,
+.main-slider-default .main-slider-area,
+.main-slider-default .slidenav-area {
+    float: right;
+}
+
+.site .thememattic-navigation {
+    float: left;
+}
+
+.main-navigation .menu ul li i {
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+@media (min-width: 768px) {
+    .row [class*="col-sm"],
+    .row [class*="col-md"],
+    .row [class*="col-lg"],
+    .social-icons ul li {
+        float: right;
+    }
+}
+
+
+body.archive.no-sidebar #main article {
+    float: right;
+}
+
+body.archive.no-sidebar #main article:nth-child(2n+1) {
+    clear: right;
+}
+
+@media only screen and (min-width: 1200px) {
+    .single .entry-content:before, .page .entry-content:before {
+        left: inherit;
+        right: -0.45818em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .main-navigation div.menu > ul > li:last-child ul,
+    .main-navigation div.menu > ul > li:nth-last-child(2) ul,
+    .main-navigation div.menu > ul > li:nth-last-child(3) ul {
+        left: 0;
+        right: auto;
+    }
+
+    .main-navigation div.menu > ul > li:last-child ul ul,
+    .main-navigation div.menu > ul > li:nth-last-child(2) ul ul,
+    .main-navigation div.menu > ul > li:nth-last-child(3) ul ul{
+        left: 100%;
+        right: auto;
+    }
+}

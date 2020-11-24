@@ -1,0 +1,553 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+
+.gradient(@color: #F5F5F5, @start: #EEE, @stop: #FFF) {
+  	background: @color;
+  	background: -webkit-gradient(linear,
+                               left bottom,
+                               left top,
+                               color-stop(0, @start),
+                               color-stop(1, @stop));
+  	background: -ms-linear-gradient(bottom,
+                                  @start,
+                                  @stop);
+  	background: -moz-linear-gradient(center bottom,
+                                   @start 0%,
+                                   @stop 100%);
+  	background: -o-linear-gradient(@stop,
+                                 @start);
+  	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
+}
+
+.bw-gradient(@color: #F5F5F5, @start: 0, @stop: 255) {
+  	background: @color;
+  	background: -webkit-gradient(linear,
+                               left bottom,
+                               left top,
+                               color-stop(0, rgb(@start,@start,@start)),
+                               color-stop(1, rgb(@stop,@stop,@stop)));
+  	background: -ms-linear-gradient(bottom,
+                                  rgb(@start,@start,@start) 0%,
+                                  rgb(@stop,@stop,@stop) 100%);
+  	background: -moz-linear-gradient(center bottom,
+                                   rgb(@start,@start,@start) 0%,
+                                   rgb(@stop,@stop,@stop) 100%);
+  	background: -o-linear-gradient(rgb(@stop,@stop,@stop),
+                                 rgb(@start,@start,@start));
+  	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",rgb(@stop,@stop,@stop),rgb(@start,@start,@start)));
+}
+
+.bordered(@top-color: #EEE, @right-color: #EEE, @bottom-color: #EEE, @left-color: #EEE) {
+  	border-top: solid 1px @top-color;
+  	border-left: solid 1px @left-color;
+  	border-right: solid 1px @right-color;
+ 	  border-bottom: solid 1px @bottom-color;
+}
+.drop-shadow(@x-axis: 0, @y-axis: 1px, @blur: 2px, @alpha: 0.1) {
+  	-webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+  	-moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+  	box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+}
+.rounded(@radius: 2px) {
+  	-webkit-border-radius: @radius;
+  	-moz-border-radius: @radius;
+  	border-radius: @radius;
+}
+
+.border-radius(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+  	-webkit-border-top-right-radius: @topright;
+  	-webkit-border-bottom-right-radius: @bottomright;
+  	-webkit-border-bottom-left-radius: @bottomleft;
+  	-webkit-border-top-left-radius: @topleft;
+  	-moz-border-radius-topright: @topright;
+  	-moz-border-radius-bottomright: @bottomright;
+  	-moz-border-radius-bottomleft: @bottomleft;
+  	-moz-border-radius-topleft: @topleft;
+  	border-top-right-radius: @topright;
+  	border-bottom-right-radius: @bottomright;
+  	border-bottom-left-radius: @bottomleft;
+  	border-top-left-radius: @topleft;
+  	.background-clip(padding-box);
+}
+.opacity(@opacity: 0.5) {
+  	-moz-opacity: @opacity;
+  	-khtml-opacity: @opacity;
+  	-webkit-opacity: @opacity;
+  	opacity: @opacity;
+  	@opperc: @opacity * 100;
+  	-ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+  	filter: ~"alpha(opacity=@{opperc})";
+}
+.transition-duration(@duration: 0.2s) {
+    -moz-transition-duration: @duration;
+    -webkit-transition-duration: @duration;
+    -o-transition-duration: @duration;
+    transition-duration: @duration;
+}
+.transform(...) {
+    -webkit-transform: @arguments;
+    -moz-transform: @arguments;
+    -o-transform: @arguments;
+    -ms-transform: @arguments;
+    transform: @arguments;
+}
+.rotation(@deg:5deg){
+    .transform(rotate(@deg));
+}
+.scale(@ratio:1.5){
+  .transform(scale(@ratio));
+}
+.transition(@duration:0.2s, @ease:ease-out) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  -o-transition: all @duration @ease;
+  transition: all @duration @ease;
+}
+.inner-shadow(@horizontal:0, @vertical:1px, @blur:2px, @alpha: 0.4) {
+  -webkit-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+  box-shadow: inset @horizontal @vertical @blur rgba(0, 0, 0, @alpha);
+}
+.box-shadow(@arguments) {
+  	-webkit-box-shadow: @arguments;
+  	-moz-box-shadow: @arguments;
+  	box-shadow: @arguments;
+}
+.box-shadow2( @arguments, @arguments2 ) {
+  	-webkit-box-shadow: @arguments, @arguments2;
+  	-moz-box-shadow: @arguments, @arguments2;
+  	box-shadow: @arguments, @arguments2;
+}
+.box-sizing(@sizing: border-box) {
+  -ms-box-sizing: @sizing;
+  -moz-box-sizing: @sizing;
+  -webkit-box-sizing: @sizing;
+  box-sizing: @sizing;
+}
+.user-select(@argument: none) {
+  -webkit-user-select: @argument;
+  -moz-user-select: @argument;
+  -ms-user-select: @argument;
+  user-select: @argument;
+}
+.columns(@colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px) {
+  -moz-column-width: @colwidth;
+  -moz-column-count: @colcount;
+  -moz-column-gap: @colgap;
+  -moz-column-rule-color: @columnRuleColor;
+  -moz-column-rule-style: @columnRuleStyle;
+  -moz-column-rule-width: @columnRuleWidth;
+  -webkit-column-width: @colwidth;
+  -webkit-column-count: @colcount;
+  -webkit-column-gap: @colgap;
+  -webkit-column-rule-color: @columnRuleColor;
+  -webkit-column-rule-style: @columnRuleStyle;
+  -webkit-column-rule-width: @columnRuleWidth;
+  column-width: @colwidth;
+  column-count: @colcount;
+  column-gap: @colgap;
+  column-rule-color: @columnRuleColor;
+  column-rule-style: @columnRuleStyle;
+  column-rule-width: @columnRuleWidth;
+}
+.translate(@x:0, @y:0) {
+  .transform(translate(@x, @y));
+}
+.background-clip(@argument: padding-box) {
+  -moz-background-clip: @argument;
+  -webkit-background-clip: @argument;
+  background-clip: @argument;
+}
+
+@hyperlink : @action_1;
+
+// font color with back ground bright 
+.fontcolor(@background, @colorDark : #ffffff, @colorWhite : #313131) when (lightness(@background) >= 80%){
+	color: @colorDark;
+	//color: @background - 104;
+}
+
+// font color with dark background
+.fontcolor(@background, @colorDark : #ffffff, @colorWhite : #313131) when (lightness(@background) < 80%){ 
+	color: @colorWhite; 
+}
+
+.fontcolor_hover (@background, @percent) when (lightness(@background) >= 80%){
+	color : mix(darken(@background, @percent) , #2F3230, 50% ); 
+	//color: @background - 104;
+
+}
+
+.fontcolor_hover (@background, @percent) when (lightness(@background) < 80%){
+	color : mix( lighten(@background, @percent) ,#EDF3EB, 50% ); 
+}
+
+.bordercolor( @background, @percent ) when (lightness(@background) >= 70%){
+	border-color:darken( @background, @percent );
+}
+
+.bordercolor(@background, @percent) when (lightness(@background) < 70%){ 
+	border-color: lighten(@background, @percent); 
+}
+
+.background_hover(@background, @percent ) when (lightness(@background) >= 80%){
+	background: darken(@background, @percent);
+}
+.background_hover(@background, @percent ) when (lightness(@background) < 80%){ 
+	background: lighten(@background, @percent); 
+}
+
+.background_text(@background, @percent ) when (lightness(@background) >= 60%){
+  color: darken(@background, @percent);
+}
+.background_text(@background, @percent ) when (lightness(@background) < 60%){ 
+  color: lighten(@background, @percent); 
+}
+
+h1, .h1, h2, .h2, h3, .h3 , h4, .h4 , h5, .h5 , h6, .h6 {
+  font-family: @font-heading;
+  
+}
+
+/* body */
+a:hover, a:focus{color : @action_1;}
+.infowindow h2.title-place a:hover, 
+.list-places .place-wrapper .place-detail-wrapper h2.title-place a:hover{
+  color: @action_1;
+}
+#page {
+  background-color: @background ;
+  background-repeat: repeat ;
+  .fontcolor_hover(@background, 25%) ;
+  .background_text(@background, 55%);
+}
+#blog-page{
+  background-color: @background ;
+  background-repeat: repeat ;
+}
+#bar-post-place-wrapper {
+  background-color: lighten(@background, 10%);
+}
+
+.list-places .place-wrapper .place-detail-wrapper {
+  background-color: lighten(@background, 40%);
+}
+
+.title-filter, 
+.filter-wrapper .widgettitle,
+#page h2.widgettitle {
+  .background_text( @background, 65% ); 
+}
+
+.vc_separator.vc_sep_color_grey .vc_sep_line {
+  .bordercolor(@background, 20%);
+}
+/* // body */
+
+
+/* menu top */
+.gn-menu .menu-item:hover{
+  background: @header_menu;
+}
+
+#menu-top,
+ul.top-menu-right > li.top-user .dropdown-menu, 
+.top-menu-center .menu-header-top-container > ul#menu-header-top .dropdown-menu, 
+.top-menu-center-resp ul#menu-header-top:hover{
+  background-color: @header;
+  .background_text(@header, 55%);
+}
+
+#menu-top,
+ul.top-menu-right > li.top-user > a,
+ul.top-menu-right li.top-search a i,
+ul.top-menu-right li.support-email a i,
+ul.top-menu-right li.support-phone a i,
+ul.top-menu li .menu-btn, 
+#menu-top .dropdown-menu>li>a, 
+#header-wrapper .authenticate,
+#header-wrapper a.authenticate:hover, 
+.menu-header-top-container ul#menu-header-top > li > a,
+.top-menu-center .menu-header-top-container > ul#menu-header-top .dropdown-menu a{
+  .background_text(@header, 55%); 
+  .fontcolor_hover(@header, 50%);
+}
+
+#menu-top .dropdown-menu > li:hover > a,
+.top-menu-center .menu-header-top-container > ul#menu-header-top .dropdown-menu li:hover a{
+  .fontcolor_hover(@action_1, 50%);
+}
+ul.top-menu-right > li:first-child,
+ul.top-menu li, 
+ul.top-menu-right > li, 
+ul.top-menu-right > li .dropdown-menu li,
+ul#menu-header-top > li .dropdown-menu li {
+  .bordercolor(@header, 20%);
+}
+ul.top-menu-right > li .dropdown-menu li a:hover, {
+  .background_hover(@action_1, 10%);
+  .fontcolor_hover(@action_1, 50%);
+}
+
+ul.top-menu li .menu-btn:hover, 
+.menu-btn.gn-icon-menu.gn-selected,
+ul.top-menu-right > li.top-user:hover, 
+ul.top-menu-right > li.top-user.open, 
+ul.top-menu-right li.top-search:hover, 
+ul.top-menu-right li.top-search.active, 
+ul.top-menu li .menu-btn:hover, 
+.non-login:hover, 
+.menu-header-top-container ul#menu-header-top > li:hover,
+ul#menu-header-top > li .dropdown-menu li a:hover,
+ul.top-menu-right>li.top-user>a:hover, 
+ul.top-menu-right>li.top-user.open>a{
+  .background_hover(@action_1, 10%);
+  .fontcolor_hover(@action_1, 50%);
+}
+#menu-top .dropdown-menu > li:hover > a,
+#menu-top ul#menu-header-top .dropdown-menu >li:hover > a,
+ul.top-menu-right .top-user .dropdown-menu > li:hover > a{
+  background : @header_menu;
+}
+
+#menu-top .dropdown-menu > li:hover > a{
+   .fontcolor_hover(@action_1, 50%);
+}
+
+.option-search.right input[type="submit"]{
+  color : @text;
+}
+/* footer */
+
+footer {
+  background-color: @footer;
+}
+
+footer,
+footer a:hover,
+footer h2.widgettitle {
+  .background_text(@footer, 100%);
+}
+
+footer a {
+  color : @action_1;
+}
+.social-list-footer li a span{
+  .fontcolor_hover(@action_1, 50%);
+  background: @action_1;
+}
+
+.list-option-left-wrapper .list-option-left li a, .list-share-social li a, #add-review input[type="submit"]:hover {
+  background-color: @action_1;
+  .fontcolor_hover(@action_1, 50%);
+  .background_text(@action_1, 55%);
+}
+.detail-place-right-wrapper .section-detail-wrapper .dropdown .btn {
+  background-color: @action_1;
+  .fontcolor_hover(@action_1, 50%);
+  .background_text(@action_1, 55%);
+}
+.description-place-wrapper .rate-wrapper .number-review {
+  color: @action_1;
+}
+
+/* Copyright */
+.copyright-wrapper {
+    background-color : @footer_bottom;
+}
+
+/* Main Color */
+a.btn-post-place {}
+.modal-header{
+  background-color: @header_modal;
+}
+.modal-header .close {
+    background: @action_1;
+}
+.modal-header .close i{
+    .fontcolor_hover(@action_1, 50%);
+}
+.form_modal_style input[type="submit"]{
+    background-color: @action_1;
+}
+
+.paginations .current,.comment-form .rating_submit:hover {
+    background: @paginate;
+    .fontcolor_hover(@paginate, 50%);
+}
+
+.paginations .page-numbers:hover{
+    color: @action_1;
+}
+.paginations span.dots{
+    color: #5f6f81;
+}
+.paginations .page-numbers.current:hover{
+  .fontcolor_hover(@action_1, 50%);
+}
+
+.paginations .load-more-post:hover, .paginations .load-refesh-post:hover{
+  .fontcolor_hover(@action_1, 50%);
+  background: @action_1;
+}
+.list-edit-place li.active a, .list-edit-place li.active a:hover, .list-edit-place li.active a:focus,
+.list-edit-place li a:hover, .list-edit-place li a:focus{
+    border-bottom: 4px solid @action_1;
+}
+modal-dialog .nav-tabs>li.active>a{
+  color: @header_menu;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+    color: @header_menu;
+}
+
+.list-place-review .place-review .place-review-bottom-wrapper .place-review-bottom .name-author,
+.list-place-review.vertical > li .place-review .place-review-bottom-wrapper .place-review-bottom .name-author,
+.icon-features i,
+.features-wrapper .icon-features i,
+.quote-testi .name,
+.detail-place-right-wrapper .contact-owner-link,
+.list-news-widget .content-news h2 a{
+    color: @action_1; 
+}
+.single-place-control li:hover a{
+  background:  @footer;
+  .fontcolor_hover(@footer, 50%);
+}
+.single-place-control a.edit, 
+.single-place-control a.archive, 
+.edit-event-option a.archive,
+.single-place-control a.edit{
+    color: #5e6f81;
+}
+
+.edit-place-option a.archive, 
+.edit-place-option a.edit{
+    color: @action_1;
+}
+
+.detail-place-right-wrapper .description-place-wrapper h1.title-place,
+.section-detail-wrapper .breadcrumb>li i,
+.section-detail-wrapper .breadcrumb>li a,
+.section-detail-wrapper .breadcrumb>li+li:before{
+    color: @footer_bottom;
+}
+
+.services-wrapper .icon-services, 
+.services-wrapper .more, 
+.slider-selection,
+ul.top-menu-right li.top-search.active{
+    background-color: @action_1;
+}
+
+.icon-services i,.services-wrapper .more{
+    .fontcolor_hover(@action_1, 50%); 
+}
+.services-wrapper .btn-more{
+  background : @action_1;
+  .fontcolor_hover(@action_1, 50%); 
+}
+
+.copyright-wrapper span.enginethemes,
+.copyright-wrapper span.enginethemes a,
+.copyright-wrapper a.logo{
+  .fontcolor_hover(@action_1, 50%); 
+}
+.list-option-filter .icon-list-view .icon-view.active i, .list-option-filter .icon-list-view .icon-view:hover i, .list-option-filter .sort-rates-lastest a.sort-icon.active, .list-option-filter .sort-rates-lastest a.sort-icon:hover{
+  color: @action_1
+}
+
+
+/* Page Author */
+.tab-info-wrapper .list-info-user-tab li a::before,
+.tab-info-wrapper .list-info-user-tab li a::after{
+  background : @action_1;  
+}
+
+.tab-info-wrapper .list-info-user-tab li:hover a i, 
+.tab-info-wrapper .list-info-user-tab li.active a i,
+.tab-info-wrapper .list-info-user-tab > li.active a,
+.profile-wrapper .info-author-wrapper .name-author{
+    color: @text;  
+}
+.tab-info-wrapper .list-info-user-tab li:hover,
+.tab-info-wrapper .list-info-user-tab li.active{
+  border-bottom-color: @action_1;
+}
+.tab-info-wrapper .list-info-user-tab li:hover a {
+  color: @action_1;
+}
+.triagle-setting-top:after{
+  border-color: transparent @footer transparent transparent;
+}
+.triagle-setting-top i{
+  .fontcolor_hover(@action_1, 50%);
+}
+.profile-wrapper .contact-author-btn,
+.profile-wrapper .img-author .new-look{
+  background : @text;  
+  .fontcolor_hover(@text, 50%); 
+}
+.event-active-wrapper .event-wrapper time{
+  color: @action_1;
+}
+.event-active-wrapper .event-wrapper .title-envent a{
+  color: @action_1;
+}
+
+
+/* Post Place */
+.step-content-wrapper .list-price li .btn.btn-submit-price-plan, .btn.btn-submit-login-form{
+    background-color: @action_1;
+    .fontcolor_hover(@action_1, 50%);
+}
+
+
+/*Page Profile */
+.wrapper_profile .col-left-profile .left-profile .user-info .content-info .username h4,
+.wrapper_profile .col-left-profile .left-profile .pakage-info .content-package h3{
+  color: @text;
+}
+
+.wrapper_profile .col-left-profile .left-profile .pakage-info .content-package>p span.number,
+.wrapper_profile .col-right-profile .right-profile .content-tabs-right-profile .content-place .list-place-tabs li.place-search .box-search .btn-search-place i{
+  color: @action_1;
+}
+
+.wrapper_profile .col-right-profile .right-profile .tabs-rigth-profile .list-info-user-tabs li.active a,
+.wrapper_profile .col-right-profile .right-profile .tabs-rigth-profile .list-info-user-tabs li a:hover{
+  color : @action_1;
+}
+.wrapper_profile .col-right-profile .right-profile .tabs-rigth-profile .list-info-user-tabs li a::after,
+.wrapper_profile .col-right-profile .right-profile .tabs-rigth-profile .list-info-user-tabs li a::before{
+  background: @action_1;
+}
+
+#tab-place .list-place-publishing>li:hover .box-edit-place li i{
+  color: @text;
+}
+
+.wrapper_profile .col-right-profile .right-profile .content-tabs-right-profile .content-reviews .list-place-publishing li .wrap-place-publishing .reviews p.username a,
+.wrapper_profile .col-right-profile .right-profile .content-tabs-right-profile .content-events .list-place-publishing>li .wrap-content-event h4 a,
+.wrapper_profile .col-right-profile .right-profile .content-tabs-right-profile .content-events .list-place-publishing>li .wrap-content-event .note-event{
+  color: @action_1;
+}
+.wrapper_profile .col-right-profile .right-profile .content-tabs-right-profile .content-events .list-place-publishing>li .wrap-content-event .event-config:hover i{
+   color: @action_1;
+}
+
+/* Single Blog */
+.comment-form .form-submit input[type=submit]:hover{
+  background: @action_1;
+}
+
+
+.content-description p {
+  font-family: @font-text;
+  font-size : @font-text-size
+
+}

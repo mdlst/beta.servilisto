@@ -1,0 +1,116 @@
+/*
+*	Prototype UI
+*/
+.wrapper-container {
+  padding-top: 70px;
+}
+
+.prototype-title {
+  position: fixed;
+  width: 100%;
+  background: #1c84d4;
+  text-align: center;
+  padding-bottom: 10px;
+  z-index: 999;
+}
+
+.prototype-title h1 {
+  background: #ddd;
+  margin: 0;
+  line-height: 60px;
+}
+
+nav.sidebar {
+  position: fixed;
+  width: 260px;
+  background: #98caf1;
+  padding: 15px 0;
+}
+
+nav.sidebar .sidenav {
+  padding-left: 4px;
+}
+
+nav.sidebar .sidenav li {
+  padding: 7px 15px;
+  color: #444c63;
+  cursor: pointer;
+}
+
+nav.sidebar .sidenav li:hover {
+  color: black;
+}
+
+/*================ Prototype Content ==================*/
+.prototype-content {
+  padding: 15px 0;
+}
+
+.block-element {
+  margin-bottom: 23px;
+}
+
+.block-element .title {
+  overflow: hidden;
+  border-left: 4px solid #1668a7;
+}
+
+.block-element .title h2 {
+  padding-left: 14px;
+  margin: 0.3em 0;
+}
+
+.block-element .display {
+  border: 1px solid #c4c4c4;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 15px;
+}
+
+.block-element .display-code {
+  background: #f7f7f9;
+  position: relative;
+  border: 1px solid #c4c4c4;
+  border-top: none;
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 15px;
+}
+
+.btn-clipboard {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  border-left: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  border-radius: 0;
+  border-bottom-left-radius: 4px;
+  background: #FFF;
+  color: #4d4d4d;
+  padding: 6px 15px;
+}
+
+.btn-clipboard:hover {
+  color: #FFF;
+  background: #6e4e9e;
+}
+
+.modal-show {
+  display: block;
+  position: inherit;
+}
+
+@media (max-width: 1200px) {
+  nav.sidebar {
+    width: 212px;
+  }
+}

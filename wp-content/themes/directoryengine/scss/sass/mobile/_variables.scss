@@ -1,0 +1,221 @@
+
+// DE color basic
+$color_base_default:				#000;
+$color_base_first: 					#484b47;
+$color_base_second: 				#5d605f;
+$color_base_third: 					#444c63;
+$color_base_fourth: 				#6f7d95;
+$color_base_fifth:					#1c84d4;
+$color_base_sixth:					#f1c40f;
+$color_base_sevth:					#5f6f81;
+
+$color_base_footer:					#34495e;
+
+$color_border_base:					#d4d8d8;
+$color_border_error:				#eb5256;
+$color_border_field:				rgba(189, 195, 199, 0.4);
+$color_border_place:				rgba(177, 180, 181, 0.1);	// opacity 0.1 //#b1b4b5 rgba(177, 180, 181, 0.1)
+
+$color_gray:						#bdc3c7;	//rgba(189, 195, 199, 0.4)
+//## Gray and brand colors for use across Bootstrap.
+$color_font_title:					#5d5f5e;
+
+$gray_base:              #000 !default;
+$gray_darker:            lighten($gray_base, 13.5%) !default; // #222
+$gray_dark:              lighten($gray_base, 20%) !default;   // #333
+$gray:                   lighten($gray_base, 33.5%) !default; // #555
+$gray_light:             lighten($gray_base, 46.7%) !default; // #777
+$gray_lighter:           lighten($gray_base, 93.5%) !default; // #eee
+
+// Notification
+$notification_color:				#808080;
+$notification_bg:					#FFF;
+
+$notification_success_color:		#FFF;		
+$notification_success_bg:			#1B83D3;
+
+$notification_error_color:			#FFF;		
+$notification_error_bg:				#1B83D3;
+
+//Link
+$link_color:						#1c84d4;
+// $link_color_hover:					
+
+
+// DE  backgourd color basic
+$bg_base_default:					#FFF;
+$bg_base_frist:						#FFF;
+$bg_base_second:					#FFF;
+$bg_base_third:						#FFF;
+$bg_base_four:						#FFF;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+$font_family_default:		'Open Sans', sans-serif;
+$font_family_first:			"Helvetica Neue", Helvetica, Arial, sans-serif;
+$font_family_second:		"Helvetica Neue", Helvetica, Arial, sans-serif;
+$font_family_third:			"Helvetica Neue", Helvetica, Arial, sans-serif;
+$font_family_four:			"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font_size_base:			14px !default;
+$font_size_small:         	ceil(($font_size_base * 0.85)) !default; // ~12px
+$font_size_medium:			ceil(($font_size_base * 1.14)) !default; // ~16px
+$font_size_large:         	ceil(($font_size_base * 1.25)) !default; // ~18px
+
+$font_size_h1:            	floor(($font_size_base * 2.6)) !default; // ~36px
+$font_size_h2:            	floor(($font_size_base * 2.15)) !default; // ~30px
+$font_size_h3:            	ceil(($font_size_base * 1.7)) !default; // ~24px
+$font_size_h4:           	ceil(($font_size_base * 1.25)) !default; // ~18px
+$font_size_h5:            	$font_size_base !default;
+$font_size_h6:            	ceil(($font_size_base * 0.85)) !default; // ~12px
+		
+
+//** Unit-less `line-height` for use in components like buttons.
+$line_height_base:        	24px !default; // 20/14
+
+//== Iconography
+//
+
+//** Load fonts from this directory.
+
+// [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
+$font_awesome_path: 		"../fonts/font-awesome/" !default;
+
+//** File name for all font files.
+$font_awesome_name:			"FontAwesome" !default;
+
+//== Button
+//
+//## For each of Prototype UI's buttons, define text, background and border color.
+
+$padding_base_vertical:     6px !default;
+$padding_base_horizontal:   12px !default;
+
+$padding_btn_vertical:		10px !default;
+$padding_btn_horizontal:	26px !default;
+$padding_input:				10px !default;
+
+$margin_icon_font:			2px !default;
+
+$border_radius_base:        4px !default;
+$border_radius_large:       6px !default;
+$border_radius_small:       3px !default;
+
+$btn_font_weight:			normal !default;
+
+$btn_default_color:			#FFF !default;
+$btn_default_bg:			#2980b9 !default;
+$btn_default_border:		none !default;
+$btn_default_hover:			$color_base_fifth;
+
+$btn_gray_color:			#FFF !default;
+$btn_gray_bg:				#bdc3c7 !default;
+$btn_gray_border:			none !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn_border_radius_base:         $border_radius_base !default;
+
+//== Form
+//** `<input>` background color
+$input_bg:                       #fff !default;
+//** Text color for `<input>`s
+$input_color:                    $color_gray !default;
+$input_color_placeholder:		#bdc3c7 !default;
+//** `<input>` border color
+$input_border:                  #ccc !default;
+
+$input_border_radius:           $border_radius_base !default;
+//** Large border radius
+$input_border_radius_large:     $border_radius_large !default;
+//** Small border radius
+$input_border_radius_small:     $border_radius_small !default;
+
+//== Dropdowns
+//
+//## Dropdown menu container and contents.
+
+//** Background for the dropdown menu.
+$dropdown_bg:                    #fff !default;
+//** Dropdown menu `border-color`.
+$dropdown_border:                rgba(0,0,0,.15) !default;
+//** Dropdown menu `border-color` **for IE8**.
+$dropdown_fallback_border:       #ccc !default;
+//** Divider color for between dropdown items.
+$dropdown_divider_bg:            #e5e5e5 !default;
+
+//** Dropdown link text color.
+$dropdown_link_color:            $gray_dark !default;
+//** Hover color for dropdown links.
+$dropdown_link_hover_color:      darken($gray_dark, 5%) !default;
+//** Hover background for dropdown links.
+$dropdown_link_hover_bg:         #f5f5f5 !default;
+
+//** Disabled dropdown menu item background color.
+$dropdown_link_disabled_color:   $gray_light !default;
+
+//** Text color for headers within dropdown menus.
+$dropdown_header_color:          $gray_light !default;
+
+//** Deprecated `$dropdown-caret-color` as of v3.1.0
+$dropdown_caret_color:           #000 !default;
+
+//-- Z-index master list
+$zindex_navbar:             	1000 !default;
+$zindex_dropdown:           	1000 !default;
+$zindex_popover:            	1060 !default;
+$zindex_tooltip:            	1070 !default;
+$zindex_navbar_fixed:       	1030 !default;
+$zindex_modal_background:   	1040 !default;
+$zindex_modal:					1050 !default;
+$zindex_notification:			1090 !default;
+
+//== Breadcrumbs
+//
+$breadcrumb_padding:   			8px !default;
+//** Breadcrumb background color
+$breadcrumb_bg:                 #f5f5f5 !default;
+//** Breadcrumb text color
+$breadcrumb_color:              #ccc !default;
+//** Text color of current page in the breadcrumb
+$breadcrumb_active_color:       $gray_light !default;
+//** Textual separator for between breadcrumb elements
+$breadcrumb_separator:          "/" !default;
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `$screen-xs` as of v3.0.1
+$screen-xs:                  480px !default;
+//** Deprecated `$screen-xs-min` as of v3.2.0
+$screen-xs-min:              $screen-xs !default;
+//** Deprecated `$screen-phone` as of v3.0.1
+$screen-phone:               $screen-xs-min !default;
+
+// Small screen / tablet
+//** Deprecated `$screen-sm` as of v3.0.1
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+//** Deprecated `$screen-tablet` as of v3.0.1
+$screen-tablet:              $screen-sm-min !default;
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+//** Deprecated `$screen-desktop` as of v3.0.1
+$screen-desktop:             $screen-md-min !default;
+
+// Large screen / wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-lg-desktop:          $screen-lg-min !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
